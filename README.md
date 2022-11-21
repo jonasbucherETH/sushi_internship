@@ -13,7 +13,7 @@ What is the difference between misc and srv (ie /srv/GT/analysis/jonas/R_LIBS vs
 Is this the discussed R package? https://github.com/haneylab/geNet
 
 Or this maybe? https://github.com/thibautjombart/adegenet 
-> -> it's this one
+> -> it's this one (and ade4)
 
 How can I copy something when using vim?
 > ie yy to copy a line, but doesn't copy outside of vim
