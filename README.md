@@ -42,7 +42,8 @@ where is this?
 
 
 # in master
+```
 $ bundle exec rails s -e production -b fgcz-c-047.uzh.ch -p 5000
 $ R CMD INSTALL /srv/GT/analysis/jonas/ezRun
-(this is always the final step; run this after testing on RStudio)
-
+# this is always the final step (run this after testing on RStudio)
+```
