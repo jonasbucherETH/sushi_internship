@@ -69,6 +69,8 @@ Add PCA calculations after gc() (in app-Vcf...)
                     
 Do I need to load R libraries in app-VcfStats.R ?
 
+Updated Rmd file (in browser; ~/sushi_project_JB); copy back to /srv/GT/analysis/jonas/ezRun/inst/templates/
+
 
 For relatively small datasets (up to a few thousand SNPs) SNPs can be handled as usual codominant markers such as
 microsatellites using genind objects. In the case of genome-wide SNP data (from hundreds
@@ -78,7 +80,7 @@ maximum efficiency and minimum memory requirements.
 -> genind for now, maybe genlight in general? or use different things depending on size? (question for later)
 
 
-# in master
+#### in master
 ```
 $ bundle exec rails s -e production -b fgcz-c-047.uzh.ch -p 5000
 $ R CMD INSTALL /srv/GT/analysis/jonas/ezRun
