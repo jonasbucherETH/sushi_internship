@@ -6,6 +6,7 @@
 #### Questions
 How do I enter the fgcz RStudio (to for example edit VcfStats.Rmd; instead of using vim)?
 > https://fgcz-genomics.uzh.ch
+> 
 How do I access the file? (eg /srv/GT/analysis/jonas/ezRun/inst/templates/VcfStats.Rmd)
 
 What is the difference between misc and srv (ie /srv/GT/analysis/jonas/R_LIBS vs. /misc/GT/analysis/jonas/R_LIBS)
