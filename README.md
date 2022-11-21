@@ -5,10 +5,15 @@
 ### 21.11.2022 - First trials (PCA)
 #### Questions
 How do I enter the fgcz RStudio (to for example edit VcfStats.Rmd; instead of using vim)?
+
 What is the difference between misc and srv (ie /srv/GT/analysis/jonas/R_LIBS vs. /misc/GT/analysis/jonas/R_LIBS)
+
 Is this the discussed R package? https://github.com/haneylab/geNet
+
 Or this maybe? https://github.com/thibautjombart/adegenet
+
 How can I copy something when using vim?
+
 Could you remind me briefly which things more or less I can keep the same and which files/parts of code I should change when trying to implemenet something new?
 
 #### Updates, notes & code (messy now, needs some changes)
