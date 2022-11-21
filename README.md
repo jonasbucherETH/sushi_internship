@@ -38,9 +38,6 @@ $ cd /srv/GT/analysis/jonas/jonas_test_sushi_20221115/master
 ```
 
 How can I copy in vim?
-
-def commands
-  run_RApp("EzAppVcfStats", lib_path: "/srv/GT/analysis/jonas/R_LIBS")
   
   
 Rmarkdown, for basic stats and visualizations (main report)
@@ -48,6 +45,7 @@ Rmarkdown, for basic stats and visualizations (main report)
 @fgcz-c-047:/srv/GT/analysis/jonas/ezRun
 $ vim R/app-VcfStats.R
 ```
+
 (this runs VcfStats.Rmd to generate main reports)
 where is this?
 -> here: ezRun/inst/templates/VcfStats.Rmd
@@ -69,7 +67,57 @@ Add PCA calculations after gc() (in app-Vcf...)
                     
 Do I need to load R libraries in app-VcfStats.R ?
 
-Updated Rmd file (in browser; ~/sushi_project_JB); copy back to /srv/GT/analysis/jonas/ezRun/inst/templates/
+Updated Rmd file (in browser; ~/sushi_project_JB); copy back to /srv/GT/analysis/jonas/ezRun/inst/templates/:
+```
+(sushi) jobucher@fgcz-c-047:~/sushi_project_JB$ scp VcfStats.Rmd /srv/GT/analysis/jonas/ezRun/inst/templates/ 
+$ bundle5000
+```
+(note: some aliases used)
+
+Check if it worked in browser (http://fgcz-c-047.uzh.ch:5000), using this file for testing: /srv/gstore/projects/p1535/test_vcf_dataset/ragi_highcov_sa0001_1k.vcf.gz
+> still shows "Jonas test header"
+
+I forgot one or two steps on the way
+
+```
+$ ssh jobucher@fgcz-genomics.uzh.ch 
+$ rinst
+$ cd /srv/GT/analysis/jonas/jonas_test_sushi_20221115/master
+$ bundle5000 
+
+no acceptor (port is in use or requires root privileges) (RuntimeError)
+```
+
+Check the process
+```
+$ ps aux|grep rails
+
+jobucher 21595  0.0  0.0   6144   896 pts/0    S+   17:31   0:00 grep rails
+```
+This does not seem to be the issue; I think I am using the wrong server or something
+
+
+Job failed (on 47)
+```
+unknown param: partition
+unknown param: isLastJob
+Fehler in library(adegenet) : es gibt kein Paket namens ‘adegenet’
+Ruft auf: <Anonymous> -> withCallingHandlers -> runMethod -> library
+error exists: jobucher@student.ethz.ch
+mail sent to: jobucher@student.ethz.ch
+Ausführung angehalten
+```
+
+Asked Natalia, likely a version problem (4.2.0 vs 4.2.2) -> adegenet not installed
+She installed it, check again if it works
+
+```
+Fehler in df2genind(snp_df, ploidy = 2) : X is not a matrix
+Ruft auf: <Anonymous> -> withCallingHandlers -> runMethod -> df2genind
+error exists: jobucher@student.ethz.ch
+mail sent to: jobucher@student.ethz.ch
+Ausführung angehalten
+```
 
 
 For relatively small datasets (up to a few thousand SNPs) SNPs can be handled as usual codominant markers such as
