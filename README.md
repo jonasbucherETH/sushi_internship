@@ -25,6 +25,10 @@ Could you remind me briefly which things more or less I can keep the same and wh
 
 #### Updates, notes & code (messy now, needs some changes)
 
+#### aliases
+To make the alias persistent you need to declare it in the ~/.bash_profile or ~/.bashrc file
+> in my case, the ~/.bashrc file directs to a ~/.bash_aliases file, create this and add aliases
+
 Setting everything up and checking if everything previously done still works
 
 First try to add some PCA stuff to the Vcf App (later make a separate one)
@@ -58,6 +62,20 @@ There are 3 files:
    
 * /srv/GT/analysis/jonas/ezRun/inst/templates/VcfStats.Rmd
   uses data generated in R file to make plots/figures
+  
+
+Add PCA calculations after gc() (in app-Vcf...)
+
+                    
+Do I need to load R libraries in app-VcfStats.R ?
+
+
+For relatively small datasets (up to a few thousand SNPs) SNPs can be handled as usual codominant markers such as
+microsatellites using genind objects. In the case of genome-wide SNP data (from hundreds
+of thousands to millions of SNPs), genind objects are no longer efficient representation
+of the data. In this case, we use genlight objects to store and handle information with
+maximum efficiency and minimum memory requirements.
+-> genind for now, maybe genlight in general? or use different things depending on size? (question for later)
 
 
 # in master
