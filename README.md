@@ -1,9 +1,5 @@
-# sushi_internship
-
-## Updates & questions
-
-### 21.11.2022 - First trials (PCA)
-#### Questions
+# 21.11.2022 - First trials (PCA)
+### Questions
 How do I enter the fgcz RStudio (to for example edit VcfStats.Rmd; instead of using vim)?
 > https://fgcz-genomics.uzh.ch
 > 
@@ -23,7 +19,7 @@ How can I copy something when using vim?
 Could you remind me briefly which things more or less I can keep the same and which files/parts of code I should change when trying to implemenet something new?
 > see below ("3 files")
 
-#### Updates, notes & code (messy now, needs some changes)
+### Updates, notes & code
 
 #### aliases
 To make the alias persistent you need to declare it in the ~/.bash_profile or ~/.bashrc file
@@ -134,3 +130,17 @@ $ bundle exec rails s -e production -b fgcz-c-047.uzh.ch -p 5000
 $ R CMD INSTALL /srv/GT/analysis/jonas/ezRun
 # this is always the final step (run this after testing on RStudio)
 ```
+
+
+# 22.11.2022 - PCA trials continued
+
+### Questions
+
+
+### Updates, notes & code
+
+#### How to easily test code/files
+
+Test R files: Download script from gstore or something
+Test Rmd files: With script/outputs from R file (should have been tested previously); load them to RMarkdown, then it's possible to test stuff there
+
