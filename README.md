@@ -108,7 +108,7 @@ Asked Natalia, likely a version problem (4.2.0 vs 4.2.2) -> adegenet not install
 She installed it, check again if it works
 
 ```
-Fehler in df2genind(snp_df, ploidy = 2) : X is not a matrix
+Fehler in df2genind(snp_df, ploidy = 2) : **X is not a matrix**
 Ruft auf: <Anonymous> -> withCallingHandlers -> runMethod -> df2genind
 error exists: jobucher@student.ethz.ch
 mail sent to: jobucher@student.ethz.ch
@@ -136,11 +136,37 @@ $ R CMD INSTALL /srv/GT/analysis/jonas/ezRun
 
 ### Questions
 
+* How do I generate the PCA file?
+* Are all assigned variables from the .R file available in the .Rmd file?
+
+* Is there population information?
 
 ### Updates, notes & code
 
 #### How to easily test code/files
 
-Test R files: Download script from gstore or something
-Test Rmd files: With script/outputs from R file (should have been tested previously); load them to RMarkdown, then it's possible to test stuff there
+* Test R files: Download script from gstore or something
+* Test Rmd files: With script/outputs from R file (should have been tested previously); load them to RMarkdown, then it's possible to test stuff there
 
+Scripts: gstore/scome_file/scripts/foobar.sh
+
+Comment out last part (below JOB IS DONE WE PUT THINGS IN PLACE AND CLEAN AUP)
+
+Change SCRATCH_DIR
+
+
+##### Try 1 using gdsfmt & SNPRelate
+
+Both are already installed on the server
+
+* Commit app-VcfStats.R
+* Copy changed Rmd file: (sushi) jobucher@fgcz-c-047:~/sushi_project_JB$ scp VcfStats.Rmd /srv/GT/analysis/jonas/ezRun/inst/templates/ 
+* Run bundle & try on server (bundle)
+
+Server already running -> kill it
+$ ps aux|grep rails
+$ kill -9 xxxxx
+
+
+alternative VCF to gds conversion:
+* The SeqArray package provides a function seqVCF2GDS() to reformat a VCF file, and it allows merging multiple VCF files during format conversion
