@@ -139,6 +139,11 @@ $ R CMD INSTALL /srv/GT/analysis/jonas/ezRun
 * How do I generate the PCA file?
 * Are all assigned variables from the .R file available in the .Rmd file?
 
+* Do I need to push as well before trying or is commit enough? And do I need to run both "bundle ..." and "R CMD ..." and if yes, in which order?
+Commit should be enough 
+
+* Do I have to be on fgcz-genomics.uzh.ch to run "R CMD ..." ?
+
 * Is there population information?
 
 ### Updates, notes & code
@@ -160,13 +165,48 @@ Change SCRATCH_DIR
 Both are already installed on the server
 
 * Commit app-VcfStats.R
-* Copy changed Rmd file: (sushi) jobucher@fgcz-c-047:~/sushi_project_JB$ scp VcfStats.Rmd /srv/GT/analysis/jonas/ezRun/inst/templates/ 
+* Copy changed Rmd file:
+(sushi) jobucher@fgcz-c-047:~/sushi_project_JB$ scp VcfStats.Rmd /srv/GT/analysis/jonas/ezRun/inst/templates/ 
+
+$ scp ~/sushi_project_JB/VcfStats.Rmd /srv/GT/analysis/jonas/ezRun/inst/templates/ 
+
 * Run bundle & try on server (bundle)
 
-Server already running -> kill it
+Process already running -> kill it
 $ ps aux|grep rails
 $ kill -9 xxxxx
 
+Went through some completely avoidable struggles; did not change to jobucher@fgcz-genomics.uzh.ch for "rinst"
+
+$ ssh jobucher@fgcz-genomics.uzh.ch 
+$ rinst
+$ exit 
+$ cd /srv/GT/analysis/jonas/jonas_test_sushi_20221115/master (alias "mast")mast
+$ bundle5000 
+
+```
+unknown param: partition
+unknown param: isLastJob
+Fehler in library(gdsfmt) : **es gibt kein Paket namens ‘gdsfmt’**
+Ruft auf: <Anonymous> -> withCallingHandlers -> runMethod -> library
+error exists: jobucher@student.ethz.ch
+mail sent to: jobucher@student.ethz.ch
+Ausführung angehalten
+```
+
+Install R packages from command line:
+```
+(sushi) jobucher@fgcz-c-047:/srv/GT/analysis/jonas/R_LIBS$ R 
+if (!require("BiocManager", quietly = TRUE))
+    install.packages("BiocManager")
+
+BiocManager::install("gdsfmt")
+
+if (!require("BiocManager", quietly = TRUE))
+    install.packages("BiocManager")
+
+BiocManager::install("SNPRelate")
+```
 
 alternative VCF to gds conversion:
 * The SeqArray package provides a function seqVCF2GDS() to reformat a VCF file, and it allows merging multiple VCF files during format conversion
