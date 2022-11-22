@@ -208,5 +208,37 @@ if (!require("BiocManager", quietly = TRUE))
 BiocManager::install("SNPRelate")
 ```
 
+Try again to run & check in browserexit
+
+```
+Hint: it is suggested to call `snpgdsOpen' to open a SNP GDS file instead of `openfn.gds'.
+Fehler in .InitFile2(cmd = "Principal Component Analysis (PCA) on genotypes:",  : 
+  There is no SNP!
+```
+
+```
+Fehler in .InitFile2(cmd = paste(ifelse(inherits(gdsobj, "SeqVarGDSClass"),  : 
+  There is no SNP!
+Ruft auf: <Anonymous> ... withCallingHandlers -> runMethod -> snpgdsLDpruning -> .InitFile2
+```
+
+Try: pca <- snpgdsPCA(genofile)
+
+Same error, but file conversion seems to be working (the error is in SNPRelate)
+There needs to be SNP in gds 
+
+This works
+```
+Principal Component Analysis (PCA) on genotypes:
+Excluding 857 SNPs on non-autosomes
+Finished	EzAppVcfStats	vcf_stats		VcfStats_pca_test8_2022-11-22--16-43-45_temp3368	2022-11-22 16:44:09
+```
+
+Another try with snpind, if it doesn't work: run until genofile is read; see if I can work with output file in Rexit
+
+
+
+
+
 alternative VCF to gds conversion:
 * The SeqArray package provides a function seqVCF2GDS() to reformat a VCF file, and it allows merging multiple VCF files during format conversion
