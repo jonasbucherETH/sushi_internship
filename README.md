@@ -281,3 +281,5 @@ Possible things to try:
 #### PCA
 Population groups: Think about input. Possibilities:
 * Required (or optional) input of population file by user
+
+Interactive? Variable vector overlay?
