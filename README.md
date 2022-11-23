@@ -284,3 +284,5 @@ Possible things to try:
 
 * Interactive? ggplotly(p_i, tooltip = "sample.id")
 * Variable vector overlay?
+
+* If shapes & colours used for population & samples, then probably best to have shapes by samples and colours by populations
