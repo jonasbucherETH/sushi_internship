@@ -279,7 +279,8 @@ Possible things to try:
 -> First PCA works, now figure out what to do and improve the visualisation, possibly try other packages
 
 #### PCA
-Population groups: Think about input. Possibilities:
-* Required (or optional) input of population file by user
+* Population groups: Think about input. Possibilities:
+  * Required (or optional) input of population file by user
 
-Interactive? Variable vector overlay?
+* Interactive? ggplotly(p_i, tooltip = "sample.id")
+* Variable vector overlay?
