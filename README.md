@@ -2,7 +2,8 @@
 ### Questions
 How do I enter the fgcz RStudio (to for example edit VcfStats.Rmd; instead of using vim)?
 > https://fgcz-genomics.uzh.ch
-> 
+> Better: https://fgcz-c-043.uzh.ch/rstudio/
+
 How do I access the file? (eg /srv/GT/analysis/jonas/ezRun/inst/templates/VcfStats.Rmd)
 
 What is the difference between misc and srv (ie /srv/GT/analysis/jonas/R_LIBS vs. /misc/GT/analysis/jonas/R_LIBS)
@@ -234,11 +235,49 @@ Excluding 857 SNPs on non-autosomes
 Finished	EzAppVcfStats	vcf_stats		VcfStats_pca_test8_2022-11-22--16-43-45_temp3368	2022-11-22 16:44:09
 ```
 
-Another try with snpind, if it doesn't work: run until genofile is read; see if I can work with output file in Rexit
-
-
-
-
+Another try with snpind, if it doesn't work: run until genofile is read; see if I can work with output file in R
 
 alternative VCF to gds conversion:
 * The SeqArray package provides a function seqVCF2GDS() to reformat a VCF file, and it allows merging multiple VCF files during format conversion
+
+
+# 23.11.2022 - gdsfmt & SNPRelate
+
+### Questions
+
+### Updates, notes & code
+
+Run app-VcfStats.R with PCA part only until reading of genofile:
+
+```
+$ ssh jobucher@fgcz-genomics.uzh.ch 
+$ rinst
+$ exit
+$ cd /srv/GT/analysis/jonas/jonas_test_sushi_20221115/master
+$ bundle5000
+```
+
+Submission test: http://fgcz-c-047.uzh.ch:5000
+
+Worked, check output: genofile ("snp.gds") not saved
+
+Change to file.path(output_dir, "snp.gds")
+
+Try again, worked! Download file then copy (when in downloads):
+
+$ scp snp.gds jobucher@fgcz-c-047.uzh.ch:~/sushi_project_JB/data/ 
+
+in .Rmd:
+```
+SNP pruning based on LD:
+Excluding 857 SNPs on non-autosomes
+```
+
+Possible things to try:
+* autosome.only=FALSE
+
+-> First PCA works, now figure out what to do and improve the visualisation, possibly try other packages
+
+#### PCA
+Population groups: Think about input. Possibilities:
+* Required (or optional) input of population file by user
