@@ -286,3 +286,14 @@ Possible things to try:
 * Variable vector overlay?
 
 * If shapes & colours used for population & samples, then probably best to have shapes by samples and colours by populations
+
+# 24.11.2022 - gdsfmt & SNPRelate continued
+
+### Questions
+
+### Updates, notes & code
+
+Changes to PCA; including (temporary) population group implementation
+
+Commit for Masa to test
+
