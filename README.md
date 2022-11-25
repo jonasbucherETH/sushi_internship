@@ -424,6 +424,29 @@ vcf-stats module not loaded, but plink yes
 
 -> needed to put it in same line, comma-separated
 
+Had a typo
+
+Note for command parameters/options:
+
+* square brackets [optional option]
+* angle brackets <required argument>
+* curly braces {default values}
+* parenthesis (miscellaneous info)
+  
+Test MDS with <dimension count> = 10
+  
+```
+Error: Multiple instances of '_' in sample ID.
+If you do not want '_' to be treated as a FID/IID delimiter, use --double-id or
+--const-fid to choose a different method of converting VCF sample IDs to PLINK
+IDs, or --id-delim to change the FID/IID delimiter.
+Fehler in ezSystem(cmd) : 
+  plink --vcf /srv/gstore/projects/p1535/test_vcf_dataset/ragi_highcov_sa0001_1k.vcf.gz --cluster --mds-plot 10 --out vcf_stats/vcf_stats 
+ failed
+```
+  
+Talk to Masa: Try with different input? Add --double-id (maybe on condition)?
+
 #### t-SNE (t-distributed stochastic neighbor embedding)
 
 #### UMAP (Uniform Manifold Approximation and Projection)
