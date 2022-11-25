@@ -303,6 +303,12 @@ Commit/push not working (not showing on github)
 
 ### Questions
 
+* What is vcf-tools exactly? (in .R)
+  * Because the cmd itself is vcftools 
+* What does gc() do?
+  * Search for function: grep -r "gc" R|grep function
+* How/where are the results from the cmd / gc() stored?
+
 ### Updates, notes & code
 
 Check why commit/push didn't work: It actually did work, but somehow the commits are not showing on my profile in the overview
@@ -381,3 +387,28 @@ server <- function(input, output) {
 # Create Shiny object
 shinyApp(ui = ui, server = server)
 ```
+
+
+#### MDS (multidimensional scaling)
+
+* How to get distance matrix? -> PLINK
+  * check available module in master/lib with cmd "module avail"
+  * add @modules = [Tools/PLINK/1.9beta6.21] to .rb file
+  * Put the command to get the distance matrix in app-VcfStats.R
+  * Examples and possible options to try:
+ 
+``` 
+plink --vcf filtered_vcfs_genome_merged/A.vcf.gz --allow-extra-chr 0 --threads 8 --pca --out out_pca/A
+
+--mds-plot <dimension count> ['by-cluster'] ['eigendecomp'] ['eigvals']
+```
+
+Reference module (for vcf): Tools/vcftools/0.1.16 
+
+(Try to change & run command (bottom of .rb file) to test plink)
+
+Test 1st implementation of cmd in 
+
+#### t-SNE (t-distributed stochastic neighbor embedding)
+
+#### UMAP (Uniform Manifold Approximation and Projection)
