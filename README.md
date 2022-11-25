@@ -420,6 +420,10 @@ In system(cmd, intern = intern, ...) :
   Fehler bei der Ausführung des Befehls
 ```
 
+vcf-stats module not loaded, but plink yes
+
+-> needed to put it in same line, comma-separated
+
 #### t-SNE (t-distributed stochastic neighbor embedding)
 
 #### UMAP (Uniform Manifold Approximation and Projection)
