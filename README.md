@@ -407,7 +407,18 @@ Reference module (for vcf): Tools/vcftools/0.1.16
 
 (Try to change & run command (bottom of .rb file) to test plink)
 
-Test 1st implementation of cmd in 
+Test 1st implementation of cmd in .R through SUSHI
+
+```
+sh: 1: vcf-stats: not found
+Fehler in ezSystem(cmd) : 
+  vcf-stats /srv/gstore/projects/p1535/test_vcf_dataset/ragi_highcov_sa0001_1k.vcf.gz -p vcf_stats/vcf_stats 
+ failed
+Ruft auf: <Anonymous> -> withCallingHandlers -> runMethod -> ezSystem
+Zusätzlich: Warnmeldung:
+In system(cmd, intern = intern, ...) :
+  Fehler bei der Ausführung des Befehls
+```
 
 #### t-SNE (t-distributed stochastic neighbor embedding)
 
