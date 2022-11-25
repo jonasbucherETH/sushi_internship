@@ -319,6 +319,7 @@ scp ~/sushi_project_JB/VcfStats.Rmd /srv/GT/analysis/jonas/ezRun/inst/templates/
 
 Commit, push and test on SUSHI
 
+```
 $ ssh jobucher@fgcz-genomics.uzh.ch 
 $ rinst
 $ exit
@@ -331,6 +332,8 @@ Doesn't work; try without the reading line altogether, as genofile is read in .R
 -> this worked, but plot not loaded 
 
 * need to call the plot differently?
+
+Try with loading ggplot2 library and with calling ggplotly(p) in the end
 
 #### PCA ideas/notes (continued)
 
