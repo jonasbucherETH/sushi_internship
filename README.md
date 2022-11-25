@@ -333,7 +333,9 @@ Doesn't work; try without the reading line altogether, as genofile is read in .R
 
 * need to call the plot differently?
 
-Try with loading ggplot2 library and with calling ggplotly(p) in the end
+Try with loading ggplot2 library and with calling ggplotly(p) in the end; and reducing fig.size
+
+-> worked!!
 
 #### PCA ideas/notes (continued)
 
