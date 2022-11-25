@@ -297,3 +297,82 @@ Changes to PCA; including (temporary) population group implementation
 
 Commit for Masa to test
 
+Commit/push not working (not showing on github)
+
+# 25.11.2022 - SUSHI test of PCA, implementation details
+
+### Questions
+
+### Updates, notes & code
+
+Check why commit/push didn't work: It actually did work, but somehow the commits are not showing on my profile in the overview
+
+Not plotting for masa; failed after for me:
+```
+Can not open file './data/snp.gds'. Datei oder Verzeichnis nicht gefunden
+```
+Need to open it differently; check how it can be inherited from .R file
+
+Try: genofile <- snpgdsOpen(genofile)
+
+scp ~/sushi_project_JB/VcfStats.Rmd /srv/GT/analysis/jonas/ezRun/inst/templates/ 
+
+Commit, push and test on SUSHI
+
+$ ssh jobucher@fgcz-genomics.uzh.ch 
+$ rinst
+$ exit
+$ mast
+$ bundle5000
+```
+
+Doesn't work; try without the reading line altogether, as genofile is read in .R file with spgdsOpen
+
+-> this worked, but plot not loaded 
+
+* need to call the plot differently?
+
+#### PCA ideas/notes (continued)
+
+* Population groups: Think about input. Possibilities:
+  * Required (or optional) input of population file by user
+
+* Interactive?
+  * ggplotly(p_i, tooltip = "sample.id")
+  * shiny
+  
+* Variable vector overlay?
+
+* If shapes & colours used for population & samples, then probably best to have shapes by samples and colours by populations
+
+* Idea: Additional input file with sample.id as identifier
+  * columns of different grouping variable
+  * Actual variables to group by can be picked interactively, plot colours & shapes gets changed in browser
+  * if too complicated; specify grouping variables before (or only input the columns to be grouped by)
+  * Default = coloured by sample.id
+
+
+#### shiny test
+```{r shiny test, fig.width=20, fig.height=8, echo=FALSE, message=FALSE, warning=FALSE}
+library(shiny)
+library(shinythemes)
+
+# user interface
+ui <- basicPage(
+  plotOutput("plot1", click = "plot_click"),
+  verbatimTextOutput("info")
+)
+
+server <- function(input, output) {
+  output$plot1 <- renderPlot({
+    plot(p)
+  })
+
+  output$info <- renderText({
+    paste0("x=", input$plot_click$x, "\ny=", input$plot_click$y)
+  })
+}
+
+# Create Shiny object
+shinyApp(ui = ui, server = server)
+```
