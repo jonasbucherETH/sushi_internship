@@ -446,6 +446,33 @@ Fehler in ezSystem(cmd) :
 ```
   
 Talk to Masa: Try with different input? Add --double-id (maybe on condition)?
+  
+# 28.11.2022 - MDS continued (slightly ill; home office)
+
+### Questions
+  
+* Which test dataset should I use?
+  
+-> use this dataset as an example: https://fgcz-sushi.uzh.ch/data_set/p1535/73589
+
+The dataset (dataset.tsv) has a new column, Population, and the file, populations.tsv has two columns, Sample and Population.
+
+One individual has "XXX" as a population name, and please avoid using this individual for plotting.
+
+### Updates, notes & code
+  
+Goals:
+  * Make MDS work
+  * Maybe PCA refinement
+  
+--double-id
+  
+FGCZ website on 5000 is timing out
+  
+Try alternative VPN: uzhvpn1.uzh.ch with uzh credentials -> works
+  
+(instead of sslvpn.ethz.ch/student-net)
+
 
 #### t-SNE (t-distributed stochastic neighbor embedding)
 
