@@ -472,8 +472,61 @@ FGCZ website on 5000 is timing out
 Try alternative VPN: uzhvpn1.uzh.ch with uzh credentials -> works
   
 (instead of sslvpn.ethz.ch/student-net)
+  
+"Empty run" log:
+```
+No trace type specified:
+Based on info supplied, a 'bar' trace seems appropriate.
+```
+  
+# 29.11. - 30.11.2022 - MDS & more 
 
+### Questions
+  
+* How many dimension for MDS plot?
+  * "If you don't need exact reconstruction, the Johnson-Lindenstrauss Lemma says you can get close to preserving all interpoint distances with O(log I)
+dimensions" (I = dimension of matrix = samples)
+* Do I have to import file again? (And how?)
+  * Yes, but only dataset.tsv, the rest is in gStore
+* How to add population to mds/pca? load the file in .R?
+  
+* How to test with specific input file in R (not Rmd file)?
+  
 
+### Updates, notes & code
+  
+Test plink MDS-plot command locally
+$ cd
+$ cd sushi_project_JB
+$ module load Tools/PLINK/1.9beta6.21
+$ plink --vcf /srv/gstore/projects/p1535/test_vcf_dataset/ragi_highcov_sa0001_1k.vcf.gz --cluster --mds-plot 10 --out .data/
+Error: Failed to open .data/.log.  Try changing the --out parameter.
+  
+--out is a prefix for files generated: change to plink_test1
+  
+Error: Multiple instances of '_' in sample ID.
+  
+Try --double-id
+$ plink --vcf /srv/gstore/projects/p1535/test_vcf_dataset/ragi_highcov_sa0001_1k.vcf.gz --double-id --cluster --mds-plot 10 --out plink_test1
+  
+Error: Invalid chromosome code 'sa0001' on line 115 of .vcf file.                                                                                                           (Use --allow-extra-chr to force it to be accepted.)
+  
+$ plink --vcf /srv/gstore/projects/p1535/test_vcf_dataset/ragi_highcov_sa0001_1k.vcf.gz --double-id --allow-extra-chr --cluster --mds-plot 10 --out plink_test1
+  
+MDS solution written to plink_test1.mds . 
+  
+~/sushi_project_JB/data$ scp -r jobucher@fgcz-genomics.uzh.ch:/srv/gstore/projects/p1535/test_vcf_dataset ./ 
+  
+Try with "new" dataset that includes population
+$ plink --vcf /srv/gstore/projects/p1535/test_vcf_dataset/ragi_highcov_sa0001_1k.vcf.gz --double-id --allow-extra-chr --cluster --mds-plot 10 --out plink_test1
+  
+Add this in .R file, try to run on SUSHI (with empty Rmd file)
+  
+  -> worked
+  
+$ scp plink_mds.mds.txt jobucher@fgcz-c-047.uzh.ch:~/sushi_project_JB/data/
+  
+  
 #### t-SNE (t-distributed stochastic neighbor embedding)
 
 #### UMAP (Uniform Manifold Approximation and Projection)
