@@ -526,6 +526,9 @@ Add this in .R file, try to run on SUSHI (with empty Rmd file)
   
 $ scp plink_mds.mds.txt jobucher@fgcz-c-047.uzh.ch:~/sushi_project_JB/data/
   
+# 06.12. - 08.12.2022 - Illness
+
+
   
 #### t-SNE (t-distributed stochastic neighbor embedding)
 
