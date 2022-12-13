@@ -528,7 +528,21 @@ $ scp plink_mds.mds.txt jobucher@fgcz-c-047.uzh.ch:~/sushi_project_JB/data/
   
 # 06.12. - 08.12.2022 - Illness
 
+# 12.12. - 13.12.2022 - 
+          
+Trying to run:
+    $ cmd <- paste("plink --vcf", "/srv/gstore/projects/p1535/test_vcf_dataset/ragi_highcov_sa0001_1k.vcf.gz", "--double-id", "--allow-extra-chr", "--cluster", "--mds-plot", 4 , "--out", prefix_mds)
 
+  -> plink not found, need to load it first
+  
+$ module sypder plink
+Tools/PLINK/1.9beta6.21
+
+  -> add this as a command to R file:
+  
+$ module load Tools/PLINK/1.9beta6.21
+  
+Still doesn't work (also module is not recognized)
   
 #### t-SNE (t-distributed stochastic neighbor embedding)
 
