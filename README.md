@@ -544,6 +544,13 @@ $ module load Tools/PLINK/1.9beta6.21
   
 Still doesn't work (also module is not recognized)
   
+Loading module in CLI and then running the test-Vcf works
+  
 #### t-SNE (t-distributed stochastic neighbor embedding)
+  
+already in Seurat
 
 #### UMAP (Uniform Manifold Approximation and Projection)
+  
+already in Seurat
+
