@@ -572,6 +572,14 @@ What is not working so far / what I would still like to do :
 <img width="670" alt="pca_shiny_1" src="https://user-images.githubusercontent.com/71451797/207640236-01ba1da4-d417-49d5-b984-024cfd947a4b.png">
 
   
+Create separate app:
+  * ~/git/ezRun/inst/templatesPCA_MDS.Rmd
+  * ~/git/ezRun/R/app-PCAMDS.R
+  * /srv/GT/analysis/jonas/jonas_test_sushi_20221115/master/lib/PCAMDSApp.rb 
+  
+PCAMDSApp:
+  * what is EzAppVcfStats? -> function in the R file
+  
 #### t-SNE (t-distributed stochastic neighbor embedding)
   
 already in Seurat
