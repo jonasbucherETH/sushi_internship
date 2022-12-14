@@ -557,6 +557,18 @@ Ideas for shiny:
 * input$shape; input$color for shaping/colouring -> reactive()
 
   
+Worked on the interactive PCA plot.
+  
+What is working so far:
+  * Pick variable for color/shape 
+  * Toggle to show/hide sample id's
+  * Pick which PCs to plot on y- and x-axis
+  * Variance explained of chosen PC shown in axis labels
+  
+What is not working so far / what I would still like to do :
+  * Do a separate PCA / DimensionalityReduction App
+  * Option for not picking a variable for color/shape
+  
 <img width="670" alt="pca_shiny_1" src="https://user-images.githubusercontent.com/71451797/207640236-01ba1da4-d417-49d5-b984-024cfd947a4b.png">
 
   
