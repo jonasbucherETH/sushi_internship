@@ -201,7 +201,8 @@ Install R packages from command line:
 if (!require("BiocManager", quietly = TRUE))
     install.packages("BiocManager")
 
-BiocManager::install("gdsfmt")
+BiocManager::install("gdsfmt")<img width="670" alt="pca_shiny_1" src="https://user-images.githubusercontent.com/71451797/207640057-d29a2eb0-13a1-4558-9e4f-6aed874071d0.png">
+
 
 if (!require("BiocManager", quietly = TRUE))
     install.packages("BiocManager")
@@ -554,6 +555,9 @@ I haven't figured out how to use ade4, as I need a dataframe first
 
 Ideas for shiny:
 * input$shape; input$color for shaping/colouring -> reactive()
+
+  
+<img width="670" alt="pca_shiny_1" src="https://user-images.githubusercontent.com/71451797/207640236-01ba1da4-d417-49d5-b984-024cfd947a4b.png">
 
   
 #### t-SNE (t-distributed stochastic neighbor embedding)
