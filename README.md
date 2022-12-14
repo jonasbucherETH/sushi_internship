@@ -544,7 +544,17 @@ $ module load Tools/PLINK/1.9beta6.21
   
 Still doesn't work (also module is not recognized)
   
-Loading module in CLI and then running the test-Vcf works
+Loading module in CLI and then running the test-Vcf -> works
+
+$ Rscript test-Vcf.R
+
+#### Try ade4 and pcaExplorer (shiny) for extension of PCA functionality
+
+I haven't figured out how to use ade4, as I need a dataframe first
+
+Ideas for shiny:
+* input$shape; input$color for shaping/colouring -> reactive()
+
   
 #### t-SNE (t-distributed stochastic neighbor embedding)
   
