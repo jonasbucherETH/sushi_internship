@@ -529,7 +529,7 @@ $ scp plink_mds.mds.txt jobucher@fgcz-c-047.uzh.ch:~/sushi_project_JB/data/
   
 # 06.12. - 08.12.2022 - Illness
 
-# 12.12. - 13.12.2022 - 
+# 12.12. - 13.12.2022 
           
 Trying to run:
     $ cmd <- paste("plink --vcf", "/srv/gstore/projects/p1535/test_vcf_dataset/ragi_highcov_sa0001_1k.vcf.gz", "--double-id", "--allow-extra-chr", "--cluster", "--mds-plot", 4 , "--out", prefix_mds)
@@ -571,14 +571,23 @@ What is not working so far / what I would still like to do :
   
 <img width="670" alt="pca_shiny_1" src="https://user-images.githubusercontent.com/71451797/207640236-01ba1da4-d417-49d5-b984-024cfd947a4b.png">
 
+# 15.12.2022 - Create PCA/MDS app
   
 Create separate app:
-  * ~/git/ezRun/inst/templatesPCA_MDS.Rmd
+  * ~/git/ezRun/inst/templates/PCA_MDS.Rmd
   * ~/git/ezRun/R/app-PCAMDS.R
   * /srv/GT/analysis/jonas/jonas_test_sushi_20221115/master/lib/PCAMDSApp.rb 
   
-PCAMDSApp:
+PCA_MDS.Rmd:
+  *
+ 
+app-PCAMDS.R:
+  * grouping_vars -> get input from column "Grouping File" -> need to put that as input in .rb
+  
+PCAMDSApp.rb:
   * what is EzAppVcfStats? -> function in the R file
+  
+
   
 #### t-SNE (t-distributed stochastic neighbor embedding)
   
