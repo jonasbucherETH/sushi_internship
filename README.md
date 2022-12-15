@@ -588,7 +588,22 @@ PCAMDSApp.rb:
   * what is EzAppVcfStats? -> function in the R file
   
   
-
+Test PCAMDS app:
+  * run on sushi (bundle5000)
+  * copy job script to ~/git/scripts
+  * run with "bash some_script.sh"
+  * Add column "Grouping File", and path to populations.txt as value of this column
+  
+```
+$ ssh jobucher@fgcz-genomics.uzh.ch 
+$ rinst
+$ exit
+$ mast
+$ bundle5000
+```
+  
+Why is the job script called "Variants_vcf_test_dataset.sh" 
+job scripts: ["/scratch/PCAMDS_test_2_2022-12-15--15-23-50/scripts/Variants_vcf_test_dataset.sh"]
   
 #### t-SNE (t-distributed stochastic neighbor embedding)
   
