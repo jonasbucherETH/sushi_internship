@@ -624,7 +624,10 @@ withCallingHandlers({
 Things I change(d):
   * in bash job script: change line 41 from EzAppVcfStats to EzAppPCAMDS
   -> Error: object 'EzAppPCAMDS' not found
-  
+  * copy .R and .Rmd file from git/ezRun to srv/GT/analysis/jonas/ezRun, git commit and push, then install and run on SUSHI
+  -> In file(filename, "wb") :
+  kann Datei 'pca_mds/snp.gds' nicht öffnen: Datei oder Verzeichnis nicht gefunden
+  * next: check ruby file/R file (prefixes) for inconsitencies
   
 #### t-SNE (t-distributed stochastic neighbor embedding)
   
