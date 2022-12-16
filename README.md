@@ -628,8 +628,15 @@ Things I change(d)/updates:
   -> In file(filename, "wb") :
   kann Datei 'pca_mds/snp.gds' nicht öffnen: Datei oder Verzeichnis nicht gefunden
   * next: check ruby file/R file (prefixes) for inconsistencies
-  * When I submit a job, it doesn't show in jobs
-  * Cannot get onto server anymore (ssh 47)
+  * When I submit a job, it doesn't show in jobs -> now it does, but fails
+  * Cannot get onto server anymore (ssh 47) -> works again now
+  * Fehler in read.vcfR(file.path("/srv/gstore/projects", input$getColumn("Filtered VCF"))) : 
+  konnte Funktion "read.vcfR" nicht finden
+  * Error: Failed to open mds/mds.log.  Try changing the --out parameter.
+Fehler in ezSystem(cmd) : 
+  plink --vcf /srv/gstore/projects/p1535/test_vcf_dataset/ragi_highcov_sa0001_1k.vcf.gz --double-id --allow-extra-chr --cluster --mds-plot 4 --out mds/mds 
+ failed
+  * Try without --out parameter altogether
   
 #### t-SNE (t-distributed stochastic neighbor embedding)
   
