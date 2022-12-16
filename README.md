@@ -604,12 +604,33 @@ $ bundle5000
   
 Why is the job script called "Variants_vcf_test_dataset.sh" 
 job scripts: ["/scratch/PCAMDS_test_2_2022-12-15--15-23-50/scripts/Variants_vcf_test_dataset.sh"]
+-> I think Variants is the type of analysis (see ruby file) and vcf_test_dataset is the dataset used.  
+  
+# 15.12.2022 - Fix PCA/MDS app
+Fehler in ezSystem(cmd) : 
+  vcf-stats /srv/gstore/projects/p1535/test_vcf_dataset/ragi_highcov_sa0001_1k.vcf.gz -p pca_mds/vcf_stats 
+ failed
+Ruft auf: <Anonymous> -> withCallingHandlers -> runMethod -> ezSystem
+
+ 
+EzAppVcfStats$new()$run(input = input, output = output, param = param)
+withCallingHandlers({
+    if (param$process_mode == "SAMPLE") {
+        if (input$getLength() > 1) {
+            stop("process mode is SAMPLE but the input contains more than one sample.")
+        }
+    }
+  
+Things I change(d):
+  * in bash job script: change line 41 from EzAppVcfStats to EzAppPCAMDS
+  -> Error: object 'EzAppPCAMDS' not found
+  
   
 #### t-SNE (t-distributed stochastic neighbor embedding)
   
-already in Seurat
+already in Seurat?
 
 #### UMAP (Uniform Manifold Approximation and Projection)
   
-already in Seurat
+already in Seurat?
 
