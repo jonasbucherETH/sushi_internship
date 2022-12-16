@@ -631,12 +631,28 @@ Things I change(d)/updates:
   * When I submit a job, it doesn't show in jobs -> now it does, but fails
   * Cannot get onto server anymore (ssh 47) -> works again now
   * Fehler in read.vcfR(file.path("/srv/gstore/projects", input$getColumn("Filtered VCF"))) : 
-  konnte Funktion "read.vcfR" nicht finden
+  konnte Funktion "read.vcfR" nicht finden -> need to load this library
   * Error: Failed to open mds/mds.log.  Try changing the --out parameter.
 Fehler in ezSystem(cmd) : 
   plink --vcf /srv/gstore/projects/p1535/test_vcf_dataset/ragi_highcov_sa0001_1k.vcf.gz --double-id --allow-extra-chr --cluster --mds-plot 4 --out mds/mds 
  failed
   * Try without --out parameter altogether
+  * Fehler in abs_path(input) : The file 'PCAMDS.Rmd' does not exist.
+  * maybe I have to use something like "makeRmdReport" like in ScSeurat; check out other apps to compare
+  * Found that in "styleFiles" there was VcfStats.Rmd instead of PCAMDS.Rmd -> changed it
+  * Fehler in file.copy(from = html_files, to = "mds") : 
+  mehr 'from' Dateien als 'to' Dateien
+  * I probably need the prefix
+  * Trying to run as bash script worked (plink ran), but there was a different error:
+  MDS solution written to plink.mds .
+Error: pandoc version 1.12.3 or higher is required and was not found (see the help page ?rmarkdown::pandoc_available).
+  * Check pandoc version (rmarkdown::pandoc_version() -> ‘2.19.2’)
+  * Try to create directory:
+    dir.create(param[['name']])
+    file.copy(from = html_files, to = param[['name']])
+    cmd <- paste('mv rmarkdownLib', param[['name']])
+  * mv: der Aufruf von stat für 'rmarkdownLib' ist nicht möglich: Datei oder Verzeichnis nicht gefunden
+  * To Masa: different setup/use different app as a guide (instead of VcfStats)? 
   
 #### t-SNE (t-distributed stochastic neighbor embedding)
   
