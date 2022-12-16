@@ -578,7 +578,7 @@ Create separate app:
   * ~/git/ezRun/R/app-PCAMDS.R
   * /srv/GT/analysis/jonas/jonas_test_sushi_20221115/master/lib/PCAMDSApp.rb 
   
-PCA_MDS.Rmd:
+PCAMDS.Rmd:
   *
  
 app-PCAMDS.R:
@@ -621,13 +621,15 @@ withCallingHandlers({
         }
     }
   
-Things I change(d):
+Things I change(d)/updates:
   * in bash job script: change line 41 from EzAppVcfStats to EzAppPCAMDS
   -> Error: object 'EzAppPCAMDS' not found
   * copy .R and .Rmd file from git/ezRun to srv/GT/analysis/jonas/ezRun, git commit and push, then install and run on SUSHI
   -> In file(filename, "wb") :
   kann Datei 'pca_mds/snp.gds' nicht öffnen: Datei oder Verzeichnis nicht gefunden
-  * next: check ruby file/R file (prefixes) for inconsitencies
+  * next: check ruby file/R file (prefixes) for inconsistencies
+  * When I submit a job, it doesn't show in jobs
+  * Cannot get onto server anymore (ssh 47)
   
 #### t-SNE (t-distributed stochastic neighbor embedding)
   
