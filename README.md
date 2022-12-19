@@ -670,6 +670,9 @@ Fehler in ezSystem(cmd) :
   * Quitting from lines 39-324 (PCAMDS.Rmd) 
 Fehler in data.frame(pca$eigenvect, grouping_vars, None = "", stringsAsFactors = FALSE) : 
   Argumente implizieren unterschiedliche Anzahl Zeilen: 0, 1
+  * How to load the grouping file (grouping_vars)? Right now it is just a string of the link to the populations file. 
+  
+Copy stuff from downloads: scp PCA.rds jobucher@fgcz-c-047.uzh.ch:~/sushi_project_JB/data/
   
   
 /srv/GT/analysis/jonas/ezRun/inst/templates$ cp ~/git/ezRun/inst/templates/PCAMDS.Rmd .
