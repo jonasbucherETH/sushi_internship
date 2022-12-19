@@ -676,6 +676,12 @@ Copy stuff from downloads: scp PCA.rds jobucher@fgcz-c-047.uzh.ch:~/sushi_projec
   
   
 /srv/GT/analysis/jonas/ezRun/inst/templates$ cp ~/git/ezRun/inst/templates/PCAMDS.Rmd .
+  
+/srv/GT/analysis/jonas/ezRun/inst/templates$ scp ~/git/ezRun/inst/templates/PCAMDS.Rmd .
+/srv/GT/analysis/jonas/ezRun/R$ scp ~/git/ezRun/R/app-PCAMDS.R .
+  
+  
+TODO next (tomorrow): adapt Rmd code to dudi.pca; check how to keep more dimensions
 
   
 #### t-SNE (t-distributed stochastic neighbor embedding)
