@@ -607,6 +607,7 @@ job scripts: ["/scratch/PCAMDS_test_2_2022-12-15--15-23-50/scripts/Variants_vcf_
 -> I think Variants is the type of analysis (see ruby file) and vcf_test_dataset is the dataset used.  
   
 # 15.12.2022 - Fix PCA/MDS app
+  
 Fehler in ezSystem(cmd) : 
   vcf-stats /srv/gstore/projects/p1535/test_vcf_dataset/ragi_highcov_sa0001_1k.vcf.gz -p pca_mds/vcf_stats 
  failed
@@ -653,6 +654,26 @@ Error: pandoc version 1.12.3 or higher is required and was not found (see the he
     cmd <- paste('mv rmarkdownLib', param[['name']])
   * mv: der Aufruf von stat für 'rmarkdownLib' ist nicht möglich: Datei oder Verzeichnis nicht gefunden
   * To Masa: different setup/use different app as a guide (instead of VcfStats)? 
+           
+# 19.12.2022 - Fix PCA/MDS app - continued
+           
+Things I change(d)/updates:
+  *   cwd <- getwd()
+  setwdNew(basename(output$getColumn("Report")))
+  on.exit(setwd(cwd), add = TRUE)
+  * kann Datei 'pca_mds/plink.mds' nicht öffnen: Datei oder Verzeichnis nicht 
+  * with prefix output_dir/plink:
+  Error: Failed to open pca_mds/plink.log.  Try changing the --out parameter.
+Fehler in ezSystem(cmd) : 
+  plink --vcf /srv/gstore/projects/p1535/test_vcf_dataset/ragi_highcov_sa0001_1k.vcf.gz --double-id --allow-extra-chr --cluster --mds-plot 4 --out pca_mds/plink 
+ failed
+  * Quitting from lines 39-324 (PCAMDS.Rmd) 
+Fehler in data.frame(pca$eigenvect, grouping_vars, None = "", stringsAsFactors = FALSE) : 
+  Argumente implizieren unterschiedliche Anzahl Zeilen: 0, 1
+  
+  
+/srv/GT/analysis/jonas/ezRun/inst/templates$ cp ~/git/ezRun/inst/templates/PCAMDS.Rmd .
+
   
 #### t-SNE (t-distributed stochastic neighbor embedding)
   
