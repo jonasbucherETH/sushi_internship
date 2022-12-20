@@ -702,7 +702,8 @@ Find output from failed jobs:
   * changed the mds read/import -> had forgotten the quotes
   * Job completed, but: Shiny applications not supported in static R Markdown documents; also printed out sessionInfo (and Input Dataset)
   * I have to pick either Rmd or shiny; cannot mix (or doesn't make sense) 
-  * -> idea: make a static (Rmd) & an interactive (shiny) output
+  * -> idea: make a static (Rmd) & an interactive (shiny) output (both as [Link] in SUSHI)
+  * 
 
   
 Questions:
@@ -710,6 +711,10 @@ Questions:
     -> Doesn't work, has to be separate
   * (How) Can I combine ggplotly and shiny?
     -> Probably doesn't make sense
+  * 
+  
+TODO:
+  * change Rmd:
 
   
 #### t-SNE (t-distributed stochastic neighbor embedding)
