@@ -677,11 +677,25 @@ Copy stuff from downloads: scp PCA.rds jobucher@fgcz-c-047.uzh.ch:~/sushi_projec
   
 /srv/GT/analysis/jonas/ezRun/inst/templates$ cp ~/git/ezRun/inst/templates/PCAMDS.Rmd .
   
-/srv/GT/analysis/jonas/ezRun/inst/templates$ scp ~/git/ezRun/inst/templates/PCAMDS.Rmd .
-/srv/GT/analysis/jonas/ezRun/R$ scp ~/git/ezRun/R/app-PCAMDS.R .
+Copying Rstudio files to ezRun:
+  * /srv/GT/analysis/jonas/ezRun/inst/templates$ scp ~/git/ezRun/inst/templates/PCAMDS.Rmd .
+  * /srv/GT/analysis/jonas/ezRun/R$ scp ~/git/ezRun/R/app-PCAMDS.R .
   
   
 TODO next (tomorrow): adapt Rmd code to dudi.pca; check how to keep more dimensions
+  
+# 20.12.2022 - Refine PCA/MDS app; start new app or do more dimensionality reduction
+  
+  ### Updates
+    * Added nf=5 to dudi.pca (keep 5 axes)
+    * Adapted the Rmd to fit dudi.pca
+    * Fehler in read.table(file = file, header = header, sep = sep, quote = quote,  : 
+  Objekt 'plink.mds' nicht gefunden
+    * Try without the MDS part; find out where plink.mds is stored
+  
+  
+  
+  
 
   
 #### t-SNE (t-distributed stochastic neighbor embedding)
