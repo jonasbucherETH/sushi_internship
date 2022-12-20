@@ -694,8 +694,22 @@ TODO next (tomorrow): adapt Rmd code to dudi.pca; check how to keep more dimensi
     * Try without the MDS part; find out where plink.mds is stored
   
   
+Find output from failed jobs:
+  * open .log file
+  * 2nd line, look on which server it ran
+  * ssh trxcopy@fgcz-...
+  * cd (scratch/PCAMDS_jonas_test6_2022-12-20--11-06-10_temp20810/ (for example)
+  * changed the mds read/import -> had forgotten the quotes
+  * Job completed, but: Shiny applications not supported in static R Markdown documents; also printed out sessionInfo (and Input Dataset)
+  * I have to pick either Rmd or shiny; cannot mix (or doesn't make sense) 
+  * -> idea: make a static (Rmd) & an interactive (shiny) output
+
   
-  
+Questions:
+  * How to do a combined shiny/"normal" app? (with different tabs)
+    -> Doesn't work, has to be separate
+  * (How) Can I combine ggplotly and shiny?
+    -> Probably doesn't make sense
 
   
 #### t-SNE (t-distributed stochastic neighbor embedding)
