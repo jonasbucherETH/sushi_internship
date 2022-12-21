@@ -769,6 +769,7 @@ TODO:
   * pca computation within in server-pca (line 58)
   * First output: Tab, title, boxes (with options) created; but no PCA plot
   * Mistakes in display options: PC1 shown as option for group and color | axis selection has PC2 and NA
+  * updateSelectInput (around line 40 in server) probably decisive
   
   
 Structure of a tab (ui): fluidRow > column > box
