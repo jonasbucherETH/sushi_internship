@@ -697,12 +697,12 @@ Objekt 'plink.mds' nicht gefunden
   * I have to pick either Rmd or shiny; cannot mix (or doesn't make sense) 
   * -> idea: make a static (Rmd) & an interactive (shiny) output (both as [Link] in SUSHI)
   * Use {.tabset} to create tabs, 1 level above tabs/headers:
-  ## PCAMDS_Result {.tabset}
-  ### PCA
-  ### MDS
-  
-
-  
+    ```
+    ## PCAMDS_Result {.tabset}
+    ### PCA
+    ### MDS
+    ```
+    
   
 Find output from failed jobs:
   * open .log file
@@ -724,17 +724,26 @@ TODO:
   * get access to gitlab; upload my shiny app there
   * link app to the shiny location (in gitlab)
   * Note: ScSeurat has the links to the interactive part in the bottom, maybe I can also do that?
+  
+  
+# 21.12.2022 - t-SNE and UMAP; maybe continue with shiny
+  
+  ### Updates
+  * 
+  
+
 
   
 #### t-SNE (t-distributed stochastic neighbor embedding)
+    
+  * Use Rtsne (already in libraries)
+  * How to get/estimate a good perplexity value
+  * 3 * perplexity < nrow(X) - 1 (so for 42: perplexity < 14)
   
-  already in Seurat?
-  
-  Use Rtsne (already in libraries)
   
   
 
 #### UMAP (Uniform Manifold Approximation and Projection)
   
-already in Seurat?
+
 
