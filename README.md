@@ -728,8 +728,13 @@ TODO:
   
 # 21.12.2022 - t-SNE and UMAP; maybe continue with shiny
   
-  ### Updates
+  ### General Updates
   * 
+  
+  ### General Questions
+  * How do I test my shiny app (because I cannot get access to the fgcz gitlab)?
+  * Do the modules added/loaded always have to be manually updated when there is a new version?
+  * (How) Can I access plink output within same file?
   
 
 
@@ -739,11 +744,27 @@ TODO:
   * Use Rtsne (already in libraries)
   * How to get/estimate a good perplexity value
   * 3 * perplexity < nrow(X) - 1 (so for 42: perplexity < 14)
+  * How to normalize vcf data / convert to matrix instead of distance matrix (because for t-SNE the data should be normalized if input is distance matrix)
+  * Try t-SNE on server with maximum possible perplexity (and MDS dims increased to 5, to match PCA dims kept)
   
   
   
 
 #### UMAP (Uniform Manifold Approximation and Projection)
+  
+  
+#### Shiny App
+  
+  * exploreDEG as template
+  * create app.R that calls all ui and server files
+  * split PCA into two files (ui, server)
+  * images in www folder
+  
+  
+  
+  * See if it runs normally (on server), otherwise ask on Asana for guidance
+  
+
   
 
 
