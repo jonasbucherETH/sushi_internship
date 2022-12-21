@@ -766,24 +766,28 @@ TODO:
   * observers = side-effect-causing actions
   * Use eventReactive to create a calculated value that only updates in response to an event
   * Use observeEvent whenever you want to perform an action in response to an event. (Note that "recalculate a value" does not generally count as performing an action)
-  * Structure of a tab (ui): fluidRow > column > box
-      fluidRow(
-          column(
-              width = 3,
-              box(
-                  title = "xxx",
-                  width = NULL,
-                  solidHeader = TRUE,
-                  status = "primary",
-                  collapsible = TRUE,
-                  collapsed = TRUE,
-                  tag$.("text"),
-                  selectInput(...)
-              ),
-              box(...
-              )
-          ),
-          column(...)
+  
+  
+Structure of a tab (ui): fluidRow > column > box
+```
+fluidRow(
+    column(
+        width = 3,
+        box(
+            title = "xxx",
+            width = NULL,
+            solidHeader = TRUE,
+            status = "primary",
+            collapsible = TRUE,
+            collapsed = TRUE,
+            tag$.("text"),
+            selectInput(...)
+        ),
+        box(...
+        )
+    ),
+    column(...)
+
 
   
   
