@@ -766,6 +766,7 @@ TODO:
   * observers = side-effect-causing actions
   * Use eventReactive to create a calculated value that only updates in response to an event
   * Use observeEvent whenever you want to perform an action in response to an event. (Note that "recalculate a value" does not generally count as performing an action)
+  * pca computation within in server-pca (line 58)
   
   
 Structure of a tab (ui): fluidRow > column > box
@@ -780,7 +781,7 @@ fluidRow(
             status = "primary",
             collapsible = TRUE,
             collapsed = TRUE,
-            tag$.("text"),
+            tag$x("text"), # x = visual sth
             selectInput(...)
         ),
         box(...
