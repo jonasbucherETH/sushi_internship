@@ -767,6 +767,8 @@ TODO:
   * Use eventReactive to create a calculated value that only updates in response to an event
   * Use observeEvent whenever you want to perform an action in response to an event. (Note that "recalculate a value" does not generally count as performing an action)
   * pca computation within in server-pca (line 58)
+  * First output: Tab, title, boxes (with options) created; but no PCA plot
+  * Mistakes in display options: PC1 shown as option for group and color | axis selection has PC2 and NA
   
   
 Structure of a tab (ui): fluidRow > column > box
