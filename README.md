@@ -729,7 +729,7 @@ TODO:
 # 21.12.2022 - t-SNE and UMAP; maybe continue with shiny
   
   ### General Updates
-  * 
+  * I will not be able to access gitlab, only for employees
   
   ### General Questions
   * How do I test my shiny app (because I cannot get access to the fgcz gitlab)?
@@ -739,14 +739,14 @@ TODO:
 
 
   
-#### t-SNE (t-distributed stochastic neighbor embedding)
+### t-SNE (t-distributed stochastic neighbor embedding)
     
   * Use Rtsne (already in libraries)
   * How to get/estimate a good perplexity value
   * 3 * perplexity < nrow(X) - 1 (so for 42: perplexity < 14)
   * How to normalize vcf data / convert to matrix instead of distance matrix (because for t-SNE the data should be normalized if input is distance matrix)
   * Try t-SNE on server with maximum possible perplexity (and MDS dims increased to 5, to match PCA dims kept)
-  * ->
+  * -> works
   * maybe more steps (max_iter = 5000)
   * comment: density/size of clusters and distance between clusters might not mean anything (see: https://distill.pub/2016/misread-tsne/)
   
@@ -756,14 +756,43 @@ TODO:
 #### UMAP (Uniform Manifold Approximation and Projection)
   
   
-#### Shiny App
-  
+### Shiny App
+  #### General notes for help (and exploreDEG notes) 
   * exploreDEG as template
-  * -> images in www folder
+  * images in www folder
+  * withProgress reports progress (only makes sense for long computations probably)
+  * observe = similar to reactive
+  * reactive expressions = calculated values
+  * observers = side-effect-causing actions
+  * Use eventReactive to create a calculated value that only updates in response to an event
+  * Use observeEvent whenever you want to perform an action in response to an event. (Note that "recalculate a value" does not generally count as performing an action)
+  * Structure of a tab (ui): fluidRow > column > box
+      fluidRow(
+          column(
+              width = 3,
+              box(
+                  title = "xxx",
+                  width = NULL,
+                  solidHeader = TRUE,
+                  status = "primary",
+                  collapsible = TRUE,
+                  collapsed = TRUE,
+                  tag$.("text"),
+                  selectInput(...)
+              ),
+              box(...
+              )
+          ),
+          column(...)
+
+  
+  
+  
+  #### Updates
   * create app.R that calls all ui and server files (done)
   * split PCA into two files (ui, server)
   
-  * for t-SNE: give option to change complexity (maybe something like [min_complexity=X, min+(max-min)*0.25, min+(max-min)*0.5, min+(max-min)*0.75 max_complexity=floor((nrow(dist_matrix)/3) - 1)]
+  * for t-SNE: give option to change complexity (maybe something like [min_complexity=X, min+(max-min)*0.25, min+(max-min)*0.5, min+(max-min)*0.75, max_complexity=floor((nrow(dist_matrix)/3) - 1)]
   
   
   
