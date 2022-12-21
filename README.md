@@ -746,6 +746,9 @@ TODO:
   * 3 * perplexity < nrow(X) - 1 (so for 42: perplexity < 14)
   * How to normalize vcf data / convert to matrix instead of distance matrix (because for t-SNE the data should be normalized if input is distance matrix)
   * Try t-SNE on server with maximum possible perplexity (and MDS dims increased to 5, to match PCA dims kept)
+  * ->
+  * maybe more steps (max_iter = 5000)
+  * comment: density/size of clusters and distance between clusters might not mean anything (see: https://distill.pub/2016/misread-tsne/)
   
   
   
@@ -756,9 +759,11 @@ TODO:
 #### Shiny App
   
   * exploreDEG as template
-  * create app.R that calls all ui and server files
+  * -> images in www folder
+  * create app.R that calls all ui and server files (done)
   * split PCA into two files (ui, server)
-  * images in www folder
+  
+  * for t-SNE: give option to change complexity (maybe something like [min_complexity=X, min+(max-min)*0.25, min+(max-min)*0.5, min+(max-min)*0.75 max_complexity=floor((nrow(dist_matrix)/3) - 1)]
   
   
   
