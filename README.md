@@ -686,12 +686,22 @@ TODO next (tomorrow): adapt Rmd code to dudi.pca; check how to keep more dimensi
   
 # 20.12.2022 - Refine PCA/MDS app; start new app or do more dimensionality reduction
   
-  ### Updates
-    * Added nf=5 to dudi.pca (keep 5 axes)
-    * Adapted the Rmd to fit dudi.pca
-    * Fehler in read.table(file = file, header = header, sep = sep, quote = quote,  : 
-  Objekt 'plink.mds' nicht gefunden
-    * Try without the MDS part; find out where plink.mds is stored
+### Updates
+  * Added nf=5 to dudi.pca (keep 5 axes)
+  * Adapted the Rmd to fit dudi.pca
+  * Fehler in read.table(file = file, header = header, sep = sep, quote = quote,  : 
+Objekt 'plink.mds' nicht gefunden
+  * Try without the MDS part; find out where plink.mds is stored
+  * changed the mds read/import -> had forgotten the quotes
+  * Job completed, but: Shiny applications not supported in static R Markdown documents; also printed out sessionInfo (and Input Dataset)
+  * I have to pick either Rmd or shiny; cannot mix (or doesn't make sense) 
+  * -> idea: make a static (Rmd) & an interactive (shiny) output (both as [Link] in SUSHI)
+  * Use {.tabset} to create tabs, 1 level above tabs/headers:
+  ## PCAMDS_Result {.tabset}
+  ### PCA
+  ### MDS
+  
+
   
   
 Find output from failed jobs:
@@ -699,11 +709,6 @@ Find output from failed jobs:
   * 2nd line, look on which server it ran
   * ssh trxcopy@fgcz-...
   * cd (scratch/PCAMDS_jonas_test6_2022-12-20--11-06-10_temp20810/ (for example)
-  * changed the mds read/import -> had forgotten the quotes
-  * Job completed, but: Shiny applications not supported in static R Markdown documents; also printed out sessionInfo (and Input Dataset)
-  * I have to pick either Rmd or shiny; cannot mix (or doesn't make sense) 
-  * -> idea: make a static (Rmd) & an interactive (shiny) output (both as [Link] in SUSHI)
-  * 
 
   
 Questions:
@@ -711,15 +716,23 @@ Questions:
     -> Doesn't work, has to be separate
   * (How) Can I combine ggplotly and shiny?
     -> Probably doesn't make sense
-  * 
+  * How to create 2 different tabs in html from Rmarkdown? (now it puts them on same page)
+  * How many dimensions for MDS?
   
 TODO:
-  * change Rmd:
+  * change Rmd -> done
+  * get access to gitlab; upload my shiny app there
+  * link app to the shiny location (in gitlab)
+  * Note: ScSeurat has the links to the interactive part in the bottom, maybe I can also do that?
 
   
 #### t-SNE (t-distributed stochastic neighbor embedding)
   
-already in Seurat?
+  already in Seurat?
+  
+  Use Rtsne (already in libraries)
+  
+  
 
 #### UMAP (Uniform Manifold Approximation and Projection)
   
