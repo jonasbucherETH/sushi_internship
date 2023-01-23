@@ -818,9 +818,10 @@ fluidRow(
   * init pca (and n_pcs, pca_tab etc.) in server-inputData
   * Idea: add variable for percent contribution as variable in server-inputData -> I already have that in pca_varprop (table)
   * error function at end of tryCatch (not withProgress)
-  * maybe next: in ui: take out/change choices and selected
+  * maybe next: in ui: take out/change choices and selected; change position of updateSelectInput or add another observeEvent
   
   ### General Questions
   * Where to do the pca calculation for the shiny app? In server-PCA or in server-inputData? (probably the latter, it is a reactive)
+  * what exactly does "ignoreInit" do?
 
 
