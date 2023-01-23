@@ -813,7 +813,7 @@ fluidRow(
 # 23.01.2023 - 
   
   ### General Updates
-  * 
+  * Job completes; No "Report [File]" currently; html file created with PCA, MDS & t-SNE, but there is a "trace 0" grouping variable
   
   ### General Questions
   * 
