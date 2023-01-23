@@ -813,7 +813,8 @@ fluidRow(
 # 23.01.2023 - 
   
   ### General Updates
-  * Job completes; No "Report [File]" currently; html file created with PCA, MDS & t-SNE, but there is a "trace 0" grouping variable
+  * PCAMDS: Job completes; No "Report [File]" currently; html file created with PCA, MDS & t-SNE, but there is a "trace 0" grouping variable
+  * is that only the Rmd? which one is the shiny? Which one is the combined one (if it already exists)? -> probably the one in R in the end
   
   ### General Questions
   * 
