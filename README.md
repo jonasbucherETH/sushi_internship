@@ -819,9 +819,12 @@ fluidRow(
   * Idea: add variable for percent contribution as variable in server-inputData -> I already have that in pca_varprop (table)
   * error function at end of tryCatch (not withProgress)
   * maybe next: in ui: take out/change choices and selected; change position of updateSelectInput or add another observeEvent
+  * Note: see line 88-97 in server-PCA (shiny_example) for only grouping by 1 (ie "None" is selected for 1 grouping variable)
+  * Try: 2 observeEvent (2nd within 1st) with PCA calculation and updateSelectInput within 1st, plot in 2nd
   
   ### General Questions
   * Where to do the pca calculation for the shiny app? In server-PCA or in server-inputData? (probably the latter, it is a reactive)
   * what exactly does "ignoreInit" do?
+  * why does it output nothing in shinyApp?
 
 
