@@ -826,5 +826,6 @@ fluidRow(
   * Where to do the pca calculation for the shiny app? In server-PCA or in server-inputData? (probably the latter, it is a reactive)
   * what exactly does "ignoreInit" do?
   * why does it output nothing in shinyApp?
+  * How do I debug shinyApp efficiently? ie print statements 
 
 
