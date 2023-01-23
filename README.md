@@ -814,9 +814,13 @@ fluidRow(
   
   ### General Updates
   * PCAMDS: Job completes; No "Report [File]" currently; html file created with PCA, MDS & t-SNE, but there is a "trace 0" grouping variable
-  * is that only the Rmd? which one is the shiny? Which one is the combined one (if it already exists)? -> probably the one in R in the end
+  * Using boxplot from exploreDEG as example currently
+  * init pca (and n_pcs, pca_tab etc.) in server-inputData
+  * Idea: add variable for percent contribution as variable in server-inputData -> I already have that in pca_varprop (table)
+  * error function at end of tryCatch (not withProgress)
+  * maybe next: in ui: take out/change choices and selected
   
   ### General Questions
-  * 
+  * Where to do the pca calculation for the shiny app? In server-PCA or in server-inputData? (probably the latter, it is a reactive)
 
 
