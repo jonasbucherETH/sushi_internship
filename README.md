@@ -843,10 +843,11 @@ fluidRow(
   * browser() statements: works "everywhere" in code (breakpoints somehow not) 
   
   ### General Questions
-  * How do I debug shinyApp efficiently? ie print statements
+  * Problem with shinytest: Error in loadNamespace(x) : there is no package called ‘shinytest’ (when using "Run Tests")
+  * Problem with shinytest/phantomjs: Error in run_phantomjs(timeout = timeout) : Failed to start phantomjs. stdout + stderr: ... could not load the shared library ...
   
   ### TODO
-  * get rid of "trace 0" group -> due to missing value for 1 data point in test data
+  * get rid of "trace 0" group -> "SOLVED": due to missing value for 1 data point in test data
   * make plots fit window properly in html
   * find a way to get reasonable parameter for t-sne (or leave that as a variable to change for the shiny app)
   
