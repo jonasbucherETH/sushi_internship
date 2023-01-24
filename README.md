@@ -831,12 +831,23 @@ fluidRow(
 # 24.01.2023 - Meeting with Masa; continue shiny app; fix some Rmd stuff
   
   ### General Updates
-  * 
+  * Masa Meeting: keep going with Rmd & shiny; possible next step will be (standardised) preprocessing that is needed to guarantee quality of certain analysis; population information as extra file (probably .txt, .csv or .tsv; I think the first, tab separated), with an extra column in Sushi (as I have already done/started)
+  * For debugging no obvious easy solution; standard basic debugging (eg print statements); to test for certain values: create an observeEvent
+  ```
+  observeEvent(input$selecter, {
+    print(paste0("You have chosen: ", input$selecter))
+  })
+  ```
+  I have tried this and I couldn't make it work for
+  * Other option: set breakpoints (click on left of code where the line numbers are, a red dot appears): code runs until there, then I can examine the contents of the environment 
+  * browser() statements: works "everywhere" in code (breakpoints somehow not) 
   
   ### General Questions
-  * How do I debug shinyApp efficiently? ie print statements -> JB: no obvious easy solution; standard basic debugging (eg print statements); to test for certain values: create an observeEvent
-  '''
-  TODO: get rid of "trace 0" group; make plots fit window; find a way to get reasonable parameter for t-sne (or leave that as a variable to change for the shiny app)
-  '''
+  * How do I debug shinyApp efficiently? ie print statements
+  
+  ### TODO
+  * get rid of "trace 0" group -> due to missing value for 1 data point in test data
+  * make plots fit window properly in html
+  * find a way to get reasonable parameter for t-sne (or leave that as a variable to change for the shiny app)
   
 
