@@ -810,7 +810,7 @@ fluidRow(
   
 # 22.12.2022 - 22.01.2023: Holidays!
 
-# 23.01.2023 - 
+# 23.01.2023 - Keep going where I left off, continue shiny app trials
   
   ### General Updates
   * PCAMDS: Job completes; No "Report [File]" currently; html file created with PCA, MDS & t-SNE, but there is a "trace 0" grouping variable
@@ -828,5 +828,15 @@ fluidRow(
   * why does it output nothing in shinyApp?
   * How do I debug shinyApp efficiently? ie print statements 
 
+# 24.01.2023 - Meeting with Masa; continue shiny app; fix some Rmd stuff
+  
+  ### General Updates
+  * 
+  
+  ### General Questions
+  * How do I debug shinyApp efficiently? ie print statements -> JB: no obvious easy solution; standard basic debugging (eg print statements); to test for certain values: create an observeEvent
+  '''
+  TODO: get rid of "trace 0" group; make plots fit window; find a way to get reasonable parameter for t-sne (or leave that as a variable to change for the shiny app)
+  '''
+  
 
-TODO: get rid of "trace 0" group; make plots fit window; find a way to get reasonable parameter for t-sne (or leave that as a variable to change for the shiny app)
