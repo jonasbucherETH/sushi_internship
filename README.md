@@ -829,3 +829,4 @@ fluidRow(
   * How do I debug shinyApp efficiently? ie print statements 
 
 
+TODO: get rid of "trace 0" group; make plots fit window; find a way to get reasonable parameter for t-sne (or leave that as a variable to change for the shiny app)
