@@ -845,6 +845,7 @@ fluidRow(
   ### General Questions
   * Problem with shinytest: Error in loadNamespace(x) : there is no package called ‘shinytest’ (when using "Run Tests")
   * Problem with shinytest/phantomjs: Error in run_phantomjs(timeout = timeout) : Failed to start phantomjs. stdout + stderr: ... could not load the shared library ...
+  * MAIN PROBLEM: my app.R (that calls the server and ui files) only runs its ui part, stops before the server part 
   
   ### TODO
   * get rid of "trace 0" group -> "SOLVED": due to missing value for 1 data point in test data
