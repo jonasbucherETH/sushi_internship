@@ -852,4 +852,19 @@ fluidRow(
   * make plots fit window properly in html
   * find a way to get reasonable parameter for t-sne (or leave that as a variable to change for the shiny app)
   
+# 25.01.2023 - 
+
+### TODO (including things from 24.01.)
+* Fix shiny output (problem with server)
+* make plots fit window properly in html
+* find a way to get reasonable parameter for t-sne (or leave that as a variable to change for the shiny app -> sliderInput or something; maybe with notes on reasonable parameters/quality of clustering)
+
+### Notes & updates
+* From Natalia (also see Asana message): Reactive elements combined with sources need to be dealt with differently.
+* Most likely a problem with sources: could be for example in app (see above) or in inputData (how data is loaded)
+
+### Questions
+*
+
+
 
