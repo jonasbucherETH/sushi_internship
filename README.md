@@ -862,6 +862,10 @@ fluidRow(
 ### Notes & updates
 * From Natalia (also see Asana message): Reactive elements combined with sources need to be dealt with differently.
 * Most likely a problem with sources: could be for example in app (see above) or in inputData (how data is loaded)
+* Could also be a package (location) problem
+    
+  I will create a data folder in the app directory and then load the data from there
+* Note: When I restart the session, it loads the app like this: shiny::runApp('R/PCAMDS_shiny'), maybe need to change the sources as it doesn't start in PCAMDS_shiny 
 
 ### Questions
 *
