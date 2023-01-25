@@ -866,6 +866,8 @@ fluidRow(
     
   I will create a data folder in the app directory and then load the data from there
 * Note: When I restart the session, it loads the app like this: shiny::runApp('R/PCAMDS_shiny'), maybe need to change the sources as it doesn't start in PCAMDS_shiny 
+* Taking out the personal libraries loaded, only outputting a simple table (from grouping vars, loaded from data folder within shiny app folder), then from there keep on adding stuff to see if it works; otherwise it might be like a server, permission or whatever issue
+* Still does not work, try to put an .Rprofile file into app folder
 
 ### Questions
 *
