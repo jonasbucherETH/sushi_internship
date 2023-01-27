@@ -879,8 +879,8 @@ fluidRow(
 * Use bindEvent instead of observeEvent
   
 ### Questions
-  * (How) Can I use the inputDataReactive for selectInput in ui?
-    -> error in evaluating the argument 'x' in selecting a method for function 'colnames': could not find function "inputDataReactive"
+  * (How) Can I use the inputDataReactive for selectInput in ui?  
+  -> error in evaluating the argument 'x' in selecting a method for function 'colnames': could not find function "inputDataReactive"
   
 
 
