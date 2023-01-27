@@ -876,12 +876,21 @@ fluidRow(
 
 ### Notes & updates
 * The problem was the genomics server for RStudio, now running on 44 and it works: https://fgcz-c-044.uzh.ch/rstudio/
-* Use bindEvent instead of observeEvent
+* Use bindEvent instead of observeEvent (?)
   
 ### Questions
   * (How) Can I use the inputDataReactive for selectInput in ui?  
   -> error in evaluating the argument 'x' in selecting a method for function 'colnames': could not find function "inputDataReactive". 
   * Where do I put the PCA calculations; how many observe/bindEvents?
+  * In exploreDEG>ui-tab-PCA, why are there no choices for certain inputs/how does this work exactly (see example below)  
+  ```
+          selectInput(
+          inputId = "pcaFactor2",
+          label = "Select which factor to shape the samples by",
+          choices = "", 
+          selected = ""
+        ),
+   
   
 
 
