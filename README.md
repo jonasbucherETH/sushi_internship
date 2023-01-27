@@ -872,10 +872,16 @@ fluidRow(
 ### Questions
 *
 
-# 26.01.2023 - Shiny
+# 26.01.2023 & 27.01.2023 - Fixing Shiny
 
 ### Notes & updates
-* Printing a string in ui works (without server in/output)
+* The problem was the genomics server for RStudio, now running on 44 and it works: https://fgcz-c-044.uzh.ch/rstudio/
+* Use bindEvent instead of observeEvent
+  
+### Questions
+  * (How) Can I use the inputDataReactive for selectInput in ui?
+  
+  error in evaluating the argument 'x' in selecting a method for function 'colnames': could not find function "inputDataReactive"
   
 
 
