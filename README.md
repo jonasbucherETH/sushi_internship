@@ -892,6 +892,7 @@ fluidRow(
         ),
   * Why is the plot not generated before choosing to display sample labels? 
   * How can I make the PCA plot fit the whole width of the box/column (while keeping the proportions)?
+  * In plotOutput, what does inline = T/F do?
    
   
 
