@@ -899,7 +899,14 @@ fluidRow(
   ```
   Warning: Error in parse: <text>:1:22: unexpected input
 1: Ecor_Afr_Eth_73-346-5_
-  ```
+  ```  
+  -> Solved   
+  
+  Warning: Error in geom_point: Problem while computing aesthetics.
+ℹ Error occurred in the 1st layer.
+Caused by error in `is_string()`:
+! argument "x" is missing, with no default
+  Input to asJSON(keep_vec_names=TRUE) is a named vector. In a future version of jsonlite, this option will not be supported, and named vectors will be translated into arrays instead of objects. If you want JSON object output, please use a named list instead. See ?toJSON.
    
   
 
