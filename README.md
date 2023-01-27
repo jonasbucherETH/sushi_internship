@@ -877,6 +877,8 @@ fluidRow(
 ### Notes & updates
 * The problem was the genomics server for RStudio, now running on 44 and it works: https://fgcz-c-044.uzh.ch/rstudio/
 * Choosing which axes to display works
+  * So far, color & shape does not work. Likely solution: fix/clean up names used (make.names() or using janitor::clean_names() )
+  * aes_string deprecated; replace with .data[[]]
   
 ### Questions
   * (How) Can I use the inputDataReactive for selectInput in ui?  
@@ -893,6 +895,11 @@ fluidRow(
   * Why is the plot not generated before choosing to display sample labels? 
   * How can I make the PCA plot fit the whole width of the box/column (while keeping the proportions)?
   * In plotOutput, what does inline = T/F do?
+  
+  ```
+  Warning: Error in parse: <text>:1:22: unexpected input
+1: Ecor_Afr_Eth_73-346-5_
+  ```
    
   
 
