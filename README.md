@@ -876,7 +876,7 @@ fluidRow(
 
 ### Notes & updates
 * The problem was the genomics server for RStudio, now running on 44 and it works: https://fgcz-c-044.uzh.ch/rstudio/
-* Use bindEvent instead of observeEvent (?)
+* Choosing which axes to display works
   
 ### Questions
   * (How) Can I use the inputDataReactive for selectInput in ui?  
@@ -890,6 +890,8 @@ fluidRow(
           choices = "", 
           selected = ""
         ),
+  * Why is the plot not generated before choosing to display sample labels? 
+  * How can I make the PCA plot fit the whole width of the box/column (while keeping the proportions)?
    
   
 
