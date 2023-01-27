@@ -852,7 +852,7 @@ fluidRow(
   * make plots fit window properly in html
   * find a way to get reasonable parameter for t-sne (or leave that as a variable to change for the shiny app)
   
-# 25.01.2023 - 
+# 25.01.2023 - Shiny
 
 ### TODO (including things from 24.01.)
 * Fix shiny output (problem with server)
@@ -872,5 +872,10 @@ fluidRow(
 ### Questions
 *
 
+# 26.01.2023 - Shiny
+
+### Notes & updates
+* Printing a string in ui works (without server in/output)
+  
 
 
