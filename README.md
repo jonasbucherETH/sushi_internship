@@ -946,3 +946,6 @@ With ignoreNULL = T and ignoreInit = F it works as intended, at least for displa
 * Sample name/label size (and choosing which ones to display) (sort of done with overall font size)
   
 
+### 31.01.2022 - 
+
+TODO: Check https://github.com/jonasbucherETH/ezRun/blob/master/CodingStyle.md
