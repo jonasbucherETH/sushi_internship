@@ -907,7 +907,7 @@ fluidRow(
 Caused by error in `is_string()`:
 ! argument "x" is missing, with no default
   Input to asJSON(keep_vec_names=TRUE) is a named vector. In a future version of jsonlite, this option will not be supported, and named vectors will be translated into arrays instead of objects. If you want JSON object output, please use a named list instead. See ?toJSON.
-   
+``` 
   
 # 30.01.2023 - Improve Shiny PCA; start implementation of MDS and t-SNE
 
@@ -920,6 +920,7 @@ Warning: Error in geom_point: Problem while computing aesthetics.
 Caused by error in `is_string()`:
 ! argument "x" is missing, with no default
 ```
+* Put all the plotting part in observeEvent 2, part 1 for setup and recalculation of PCA in case of change in dataset (removing groups/outliers or something)
 
 
 * Took the xlim/ylim part out of the if(sample_names) part, otherwise the scale changes with toggle
@@ -928,3 +929,4 @@ Caused by error in `is_string()`:
 * Which combination of ignoreNULL and ignoreInit to use for observeEvent(s)?  
 With ignoreNULL = T and ignoreInit = F it works as intended, at least for displaying sample labels. But maybe there is a better combination (eg performance)
 * When I change the color group input, it immediately switches pack to initial selected value (Population), why? Maybe updateSelectInput in wrong position? -> SOLVED
+* For shapes: How can I include "None" as option?
