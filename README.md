@@ -933,11 +933,16 @@ With ignoreNULL = T and ignoreInit = F it works as intended, at least for displa
   
   
 ### Things to (maybe) do
-* Exclusion of groups/individuals (priority)
-* Title
-* Legend size(s) -> possible to do (+) and (-) / zoom in and zoom out buttons?
-* Point size
+* Rename stuff in PCA first, so that it is more easily extendable to other methods (for example pick_pc_x)
+* Exclusion of groups/individuals (priority) -> possiblity: brushedPoints or nearPoints
+* TitlenearPoints
+* Legend size(s)? DONE (overall font size)
+* Point size - DONE
 * Color palette choice
 * Theme choice
 * Download button
-* 
+* (Fixed coordinates; proportional to variance - as option)
+* (Font)
+* Sample name/label size (and choosing which ones to display) (sort of done with overall font size)
+  
+
