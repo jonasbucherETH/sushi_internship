@@ -935,7 +935,7 @@ With ignoreNULL = T and ignoreInit = F it works as intended, at least for displa
 ### Things to (maybe) do
 * Exclusion of groups/individuals (priority)
 * Title
-* Legend size(s)
+* Legend size(s) -> possible to do (+) and (-) / zoom in and zoom out buttons?
 * Point size
 * Color palette choice
 * Theme choice
