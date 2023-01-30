@@ -930,3 +930,14 @@ Caused by error in `is_string()`:
 With ignoreNULL = T and ignoreInit = F it works as intended, at least for displaying sample labels. But maybe there is a better combination (eg performance)
 * When I change the color group input, it immediately switches pack to initial selected value (Population), why? Maybe updateSelectInput in wrong position? -> SOLVED
 * For shapes: How can I include "None" as option?
+  
+  
+### Things to (maybe) do
+* Exclusion of groups/individuals (priority)
+* Title
+* Legend size(s)
+* Point size
+* Color palette choice
+* Theme choice
+* Download button
+* 
