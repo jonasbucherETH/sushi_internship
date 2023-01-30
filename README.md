@@ -919,6 +919,7 @@ Warning: Error in geom_point: Problem while computing aesthetics.
 ℹ Error occurred in the 1st layer.
 Caused by error in `is_string()`:
 ! argument "x" is missing, with no default
+```
 
 
 * Took the xlim/ylim part out of the if(sample_names) part, otherwise the scale changes with toggle
@@ -926,4 +927,4 @@ Caused by error in `is_string()`:
 ### Questions
 * Which combination of ignoreNULL and ignoreInit to use for observeEvent(s)?  
 With ignoreNULL = T and ignoreInit = F it works as intended, at least for displaying sample labels. But maybe there is a better combination (eg performance)
-* When I change the color group input, it immediately switches pack to initial selected value (Population), why? Maybe updateSelectInput in wrong position?
+* When I change the color group input, it immediately switches pack to initial selected value (Population), why? Maybe updateSelectInput in wrong position? -> SOLVED
