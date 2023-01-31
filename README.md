@@ -989,3 +989,5 @@ Named functions should never rely on a variable of the parent environment. Only 
 
 ### TODO
   * Break down code into parts: # Load data ---------------------------
+  * Implement shiny MDS
+  * Implement shiny t-SNE
