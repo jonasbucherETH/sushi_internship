@@ -957,16 +957,16 @@ Check ezRun coding style and naming conventions: https://github.com/jonasbucherE
   * Break down code into parts: # Load data ---------------------------
 
 
-* use the RStudio Addin to style code: https://github.com/r-lib/styler
-* only use ascii characters in all files; neve use Umlaut and other characters
-* in any file: All names and comments must be based on English
+* use the RStudio Addin to style code: https://github.com/r-lib/styler - DONE
+* only use ascii characters in all files; neve use Umlaut and other characters - DONE
+* in any file: All names and comments must be based on English - DONE
 
 #### Naming
 
 * use camelCase for variable names - DONE
-* use underscore_separated for function names
+* use underscore_separated for function names - DONE
 * counting variables: `nSamples`, `nReads` DONE
-** use plural in vectors and matrices: `reads`
+* use plural in vectors and matrices: `reads`
 
 #### Conventions
 
@@ -988,3 +988,4 @@ Named functions should never rely on a variable of the parent environment. Only 
 * Keep "duplicate" of rownames (sample IDs) as first column?
 
 ### TODO
+  * Break down code into parts: # Load data ---------------------------
