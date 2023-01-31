@@ -948,4 +948,43 @@ With ignoreNULL = T and ignoreInit = F it works as intended, at least for displa
 
 ### 31.01.2022 - 
 
-TODO: Check https://github.com/jonasbucherETH/ezRun/blob/master/CodingStyle.md
+### Notes & updates
+Check ezRun coding style and naming conventions: https://github.com/jonasbucherETH/ezRun/blob/master/CodingStyle.md
+
+#### General Rules
+
+* follow the tidyverse-style: https://style.tidyverse.org/
+  * Break down code into parts: # Load data ---------------------------
+
+
+* use the RStudio Addin to style code: https://github.com/r-lib/styler
+* only use ascii characters in all files; neve use Umlaut and other characters
+* in any file: All names and comments must be based on English
+
+#### Naming
+
+* use camelCase for variable names - DONE
+* use underscore_separated for function names
+* counting variables: `nSamples`, `nReads` DONE
+** use plural in vectors and matrices: `reads`
+
+#### Conventions
+
+* always use curly braces also for very simple `if` statements - DONE
+* use `library` instead of `require` since `library` gives an error while `require` gives only a warning if the package is missing - DONE
+* the use of row names as IDs for matrices and data.frames is encouraged
+* never access columns/rows by hard-coded indices, be aware that column or row ordering may change, use column or row names if possible - See question below
+* never user `for (i in 1:length(x))`, if the length of `x` is zero, this fails, always use `for (i in seq_along(x))`
+
+
+## Functions
+
+Named functions should never rely on a variable of the parent environment. Only exception should be anonymous functions.
+
+### Questions
+* Specificities for distance matrix (t-SNE)? See: https://www.cog-genomics.org/plink/1.9/distance
+* IBD?
+* Number of PCs to keep with dudi.pca?
+* Keep "duplicate" of rownames (sample IDs) as first column?
+
+### TODO
