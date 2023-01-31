@@ -946,10 +946,12 @@ With ignoreNULL = T and ignoreInit = F it works as intended, at least for displa
 * Sample name/label size (and choosing which ones to display) (sort of done with overall font size)
   
 
-### 31.01.2022 - 
+### 31.01.2022 - Clean up code; implement t-SNE
 
 ### Notes & updates
-Check ezRun coding style and naming conventions: https://github.com/jonasbucherETH/ezRun/blob/master/CodingStyle.md
+* Check ezRun coding style and naming conventions: https://github.com/jonasbucherETH/ezRun/blob/master/CodingStyle.md
+* Error in .check_tsne_params: perplexity should be a positive number
+  -> check how updateNumericInput handles the step with the min/max stuff
 
 #### General Rules
 
@@ -976,7 +978,6 @@ Check ezRun coding style and naming conventions: https://github.com/jonasbucherE
 * never access columns/rows by hard-coded indices, be aware that column or row ordering may change, use column or row names if possible - See question below
 * never user `for (i in 1:length(x))`, if the length of `x` is zero, this fails, always use `for (i in seq_along(x))`
 
-
 ## Functions
 
 Named functions should never rely on a variable of the parent environment. Only exception should be anonymous functions.
@@ -986,8 +987,21 @@ Named functions should never rely on a variable of the parent environment. Only 
 * IBD?
 * Number of PCs to keep with dudi.pca?
 * Keep "duplicate" of rownames (sample IDs) as first column?
+  
 
 ### TODO
   * Break down code into parts: # Load data ---------------------------
   * Implement shiny MDS
   * Implement shiny t-SNE
+    * Problem: when I toggle sample labels, t-SNE is recalculated -> SOLVED
+  * t-SNE parameters
+  * Add descriptions of methods 
+  
+#### Notes - t-SNE description/help for users
+  * perplexity: how to balance attention between local and global aspects of your data
+  * “The performance of SNE is fairly robust to changes in the perplexity, and typical values are between 5 and 50.” (van der Maaten and Hinton, 2008)
+  * you cannot see relative sizes of clusters in a t-SNE plot
+  * distances between well-separated clusters in a t-SNE plot may mean nothing
+  * Different runs can get different results
+  * Often multiple plots & finetuning needed
+
