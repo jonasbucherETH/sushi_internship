@@ -946,19 +946,20 @@ With ignoreNULL = T and ignoreInit = F it works as intended, at least for displa
 * Sample name/label size (and choosing which ones to display) (sort of done with overall font size)
   
 
-### 31.01.2022 - Clean up code; implement t-SNE
+### 31.01.2022 - Clean up (PCA) code; implement t-SNE
 
 ### Notes & updates
+  
 * Check ezRun coding style and naming conventions: https://github.com/jonasbucherETH/ezRun/blob/master/CodingStyle.md
-* Error in .check_tsne_params: perplexity should be a positive number
+* Error in .check_tsne_params: perplexity should be a positive number - SOLVED
   -> check how updateNumericInput handles the step with the min/max stuff
 
 #### General Rules
-
+  
 * follow the tidyverse-style: https://style.tidyverse.org/
   * Break down code into parts: # Load data ---------------------------
 
-
+  
 * use the RStudio Addin to style code: https://github.com/r-lib/styler - DONE
 * only use ascii characters in all files; neve use Umlaut and other characters - DONE
 * in any file: All names and comments must be based on English - DONE
@@ -996,6 +997,8 @@ Named functions should never rely on a variable of the parent environment. Only 
     * Problem: when I toggle sample labels, t-SNE is recalculated -> SOLVED
   * t-SNE parameters
   * Add descriptions of methods 
+  * tags
+  * Put parameters that go together with actionButton into its own box (maybe tabBox?)
   
 #### Notes - t-SNE description/help for users
   * perplexity: how to balance attention between local and global aspects of your data
