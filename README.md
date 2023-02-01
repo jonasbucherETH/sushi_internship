@@ -1024,6 +1024,8 @@ Named functions should never rely on a variable of the parent environment. Only 
 ### TODO
 * PCA scree plot
 * Get rid of first column (duplicate of rownames); adapt code accordingly
+* colouring (colourList)
+* brushedPoints -> exclusion of samples (eg outliers)
 
 
 
