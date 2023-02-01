@@ -1022,10 +1022,26 @@ Named functions should never rely on a variable of the parent environment. Only 
 
 
 ### TODO
-* PCA scree plot
 * Get rid of first column (duplicate of rownames); adapt code accordingly
+* PCA scree plot
 * colouring (colourList)
 * brushedPoints -> exclusion of samples (eg outliers)
+  
+### Short meeting with Natalia
+
+#### What I plan to do
+* PCA scree plot (maybe as tabBox?)
+* Title option
+* Download button
+
+
+#### Questions/unclarities
+* Design (my choice or use template?)
+* Color choice? Predefined (and therefore consistent throughout shiny app) or give user options (so that they can use same colours for populations that they usually use)?
+* Colour & shape by same param (if many groups)?
+* tags?
+* Where/how to add descriptions (eg for parameters in t-SNE)
+* Plot size & axis proportion
 
 
 
