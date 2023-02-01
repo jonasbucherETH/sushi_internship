@@ -946,7 +946,7 @@ With ignoreNULL = T and ignoreInit = F it works as intended, at least for displa
 * Sample name/label size (and choosing which ones to display) (sort of done with overall font size)
   
 
-### 31.01.2022 - Clean up (PCA) code; implement t-SNE
+### 31.01.2023 - Clean up (PCA) code; implement t-SNE
 
 ### Notes & updates
   
@@ -992,13 +992,14 @@ Named functions should never rely on a variable of the parent environment. Only 
 
 ### TODO
   * Break down code into parts: # Load data ---------------------------
-  * Implement shiny MDS
+  * Implement shiny MDS 
   * Implement shiny t-SNE
     * Problem: when I toggle sample labels, t-SNE is recalculated -> SOLVED
   * t-SNE parameters
   * Add descriptions of methods 
   * tags
   * Put parameters that go together with actionButton into its own box (maybe tabBox?)
+  * PCA: scree plot
   
 #### Notes - t-SNE description/help for users
   * perplexity: how to balance attention between local and global aspects of your data
@@ -1007,4 +1008,24 @@ Named functions should never rely on a variable of the parent environment. Only 
   * distances between well-separated clusters in a t-SNE plot may mean nothing
   * Different runs can get different results
   * Often multiple plots & finetuning needed
+  
+  
+  
+# 01.02.2023 - Extend shiny app
+
+
+### Notes & updates
+*
+
+### Questions
+* Shiny MDS?
+
+
+### TODO
+* PCA scree plot
+
+
+
+  
+  
 
