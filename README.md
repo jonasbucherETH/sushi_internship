@@ -1015,7 +1015,7 @@ Named functions should never rely on a variable of the parent environment. Only 
 
 
 ### Notes & updates
-*
+* Maybe don't do t-SNE; instead DAPC
 
 ### Questions
 * Shiny MDS?
@@ -1023,16 +1023,17 @@ Named functions should never rely on a variable of the parent environment. Only 
 
 ### TODO
 * Get rid of first column (duplicate of rownames); adapt code accordingly
-* PCA scree plot
+* PCA scree plot (format)
 * colouring (colourList)
 * brushedPoints -> exclusion of samples (eg outliers)
+* PC loadings next to scree plot
   
 ### Short meeting with Natalia
 
 #### What I plan to do
 * PCA scree plot (maybe as tabBox?)
-* Title option
-* Download button
+* Title option (with toggle to display or not)
+* Download button (maybe additional textbox for name, if no other solution)
 
 
 #### Questions/unclarities
