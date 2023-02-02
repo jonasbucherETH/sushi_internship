@@ -1054,6 +1054,6 @@ Named functions should never rely on a variable of the parent environment. Only 
 * df$selected_ stays all FALSE even after selecting point(s)
 
 ### Questions
-  
+* Standardize before UMAP?
   
 
