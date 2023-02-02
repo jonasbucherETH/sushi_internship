@@ -1038,14 +1038,22 @@ Named functions should never rely on a variable of the parent environment. Only 
 
 #### Questions/unclarities
 * Design (my choice or use template?)
-* Color choice? Predefined (and therefore consistent throughout shiny app) or give user options (so that they can use same colours for populations that they usually use)?
-* Colour & shape by same param (if many groups)?
-* tags?
+* Color choice? Predefined (and therefore consistent throughout shiny app) or give user options (so that they can use same colours for populations that they usually use)? Probably don't do that; instead pick reasonable color set
+* Colour & shape by same param (if many groups)? -> Works already
+* tags? -> sort of just text
 * Where/how to add descriptions (eg for parameters in t-SNE)
-* Plot size & axis proportion
+* Plot size & axis proportion -> DONE
 
 
+# 02.02.2023 - DAPC, UMAP
 
+### Notes & updates
+* Brush first trials: Error brushedPoints: `xvar` ('.data[["PC1"]]')  not in names of input - SOLVED
+* rownames(brushedPoints(df = pcaTable, brush = input$pcaBrush, xvar = input$pickFactor1PCA, yvar = input$pickFactor2PCA, allRows = FALSE))
+  * print returns : character(0)
+* df$selected_ stays all FALSE even after selecting point(s)
+
+### Questions
   
   
 
