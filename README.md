@@ -1061,7 +1061,8 @@ Named functions should never rely on a variable of the parent environment. Only 
 
 
 ### Notes & updates
-* 
+* UMAP works in general; need to get into detail now with parameters, display option etc
+* (TODO) change "display title" to
 
 ### Questions
 * 
