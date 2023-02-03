@@ -1068,5 +1068,5 @@ Named functions should never rely on a variable of the parent environment. Only 
 * Get bigger, more complex (real) dataset to test app
 
 ### Questions
-* 
+* How to do 2 inputs side by side in 1 column?
 
