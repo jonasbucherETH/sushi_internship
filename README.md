@@ -1045,7 +1045,7 @@ Named functions should never rely on a variable of the parent environment. Only 
 * Plot size & axis proportion -> DONE
 
 
-# 02.02.2023 - DAPC, UMAP
+# 02.02.2023 - UMAP, DAPC
 
 ### Notes & updates
 * Brush first trials: Error brushedPoints: `xvar` ('.data[["PC1"]]')  not in names of input - SOLVED
@@ -1056,4 +1056,13 @@ Named functions should never rely on a variable of the parent environment. Only 
 ### Questions
 * Standardize before UMAP?
   
+  
+# 02.02.2023 - UMAP, DAPC continued
+
+
+### Notes & updates
+* 
+
+### Questions
+* 
 
