@@ -1062,7 +1062,7 @@ Named functions should never rely on a variable of the parent environment. Only 
 
 ### Notes & updates
 * UMAP works in general; need to get into detail now with parameters, display option etc
-* (TODO) change "display title" to
+* (TODO) change "display title" to actionButton (or maybe all display options with 1 actionButton)
 
 ### Questions
 * 
