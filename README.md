@@ -1063,6 +1063,9 @@ Named functions should never rely on a variable of the parent environment. Only 
 ### Notes & updates
 * UMAP works in general; need to get into detail now with parameters, display option etc
 * (TODO) change "display title" to actionButton (or maybe all display options with 1 actionButton)
+* Idea for inclusion/exclusion of samples: user input "grouping file" with column "include" TRUE/FALSE -> in advance
+* DAPC: read carefully the Details in "?find.clusters": === ON THE SELECTION OF K ===
+* Get bigger, more complex (real) dataset to test app
 
 ### Questions
 * 
