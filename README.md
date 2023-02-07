@@ -1057,7 +1057,7 @@ Named functions should never rely on a variable of the parent environment. Only 
 * Standardize before UMAP?
   
   
-# 02.02.2023 - UMAP, DAPC continued
+# 03.02.2023 - UMAP, DAPC continued
 
 
 ### Notes & updates
@@ -1069,4 +1069,26 @@ Named functions should never rely on a variable of the parent environment. Only 
 
 ### Questions
 * How to do 2 inputs side by side in 1 column?
+  
+
+
+# 06/07.02.2023 - 
+
+
+### Notes & updates
+* 
+
+### Questions
+* 
+
+
+### TODO
+* inputs side by side in 1 column - DONE
+* banners (www)
+* sliderInput w/o ticks - DONE
+* nicer screeplot - DONE
+
+
+### Meeting notes
+
 
