@@ -1076,10 +1076,13 @@ Named functions should never rely on a variable of the parent environment. Only 
 
 
 ### Notes & updates
-* 
+* Use flowLayout to put multiple inputs on 1 line in a box
+* Or (probably better): another fluidRow
+* /srv/GT/analysis/jonas/ezRun/R$ scp -r ~/git/ezRun/R/PCAMDS_shiny .
+* git add -A (to add all modified & added files)
 
-### Questions
-* 
+### Questions/Unclarities
+* Scaling for the different Algorithms
 
 
 ### TODO
@@ -1087,6 +1090,8 @@ Named functions should never rely on a variable of the parent environment. Only 
 * banners (www)
 * sliderInput w/o ticks - DONE
 * nicer screeplot - DONE
+* Title change on ENTER
+* change variable names in app-...
 
 
 ### Meeting notes
