@@ -1090,7 +1090,7 @@ Named functions should never rely on a variable of the parent environment. Only 
 * banners (www)
 * sliderInput w/o ticks - DONE
 * nicer screeplot - DONE
-* Title change on ENTER
+* (Title change on ENTER)
 * change variable names in app-...
 
 
@@ -1108,6 +1108,9 @@ Named functions should never rely on a variable of the parent environment. Only 
 
 ### Notes & updates
 * git commit --amend: to modify the most recent commit 
+* Removing outliers sort of works, but:
+  * Have to type the sample id to remove
+  * gets reset when it should not
 
 
 ### Questions/Unclarities
