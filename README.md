@@ -1095,5 +1095,23 @@ Named functions should never rely on a variable of the parent environment. Only 
 
 
 ### Meeting notes
+* Presentation:
+  * Introduction (to popgen)
+  * Ideas I wanted to implement, why I implemented/used which parameters, how everything works
+  * Demonstration
+  * What I wanted to do but couldn't & ideas for future implementation (outlook)
+  * What I learned, positive & negative things (& what they could improve)
 
 
+# 06/07.02.2023 - 
+
+
+### Notes & updates
+* git commit --amend: to modify the most recent commit 
+
+
+### Questions/Unclarities
+* 
+
+
+### TODO
