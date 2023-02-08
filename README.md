@@ -1114,7 +1114,7 @@ Named functions should never rely on a variable of the parent environment. Only 
 
 
 ### Questions/Unclarities
-* 
+* Do an actual test on if there are outliers?
 
 
 ### TODO
