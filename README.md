@@ -1118,3 +1118,5 @@ Named functions should never rely on a variable of the parent environment. Only 
 
 
 ### TODO
+* 2 buckets with click and drag for outlier removal
+* Match rownames with groupingVars instead of assuming correct order
