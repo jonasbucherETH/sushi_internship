@@ -1111,6 +1111,10 @@ Named functions should never rely on a variable of the parent environment. Only 
 * Removing outliers sort of works, but:
   * Have to type the sample id to remove
   * gets reset when it should not
+* useful: editData
+* <<- instead of <- for global assignment of variables (eg if it is inside of observeEvent)
+* input$sampleTablePCA_cell_edit only outputs last row with a tick
+* initial value of checkbox = F -> change to T somehow
 
 
 ### Questions/Unclarities
