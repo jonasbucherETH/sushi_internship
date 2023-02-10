@@ -1135,8 +1135,10 @@ Named functions should never rely on a variable of the parent environment. Only 
 
 
 ### Questions/Unclarities
-* 
+* Why is PC1 (axis) not bigger than PC2 if the axes are kept proportional?
 
 
 ### TODO
-* Get rid of groupingVariables as much as possible
+* Get rid of groupingVariables in code as much as possible
+* Take out rownames from datatable
+* Change x3 & x4 to reasonable variable names
