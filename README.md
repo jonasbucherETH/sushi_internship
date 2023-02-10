@@ -1103,7 +1103,7 @@ Named functions should never rely on a variable of the parent environment. Only 
   * What I learned, positive & negative things (& what they could improve)
 
 
-# 06/07.02.2023 - 
+# 08/09.02.2023 - Meeting, fix git
 
 
 ### Notes & updates
@@ -1124,3 +1124,19 @@ Named functions should never rely on a variable of the parent environment. Only 
 ### TODO
 * 2 buckets with click and drag for outlier removal
 * Match rownames with groupingVars instead of assuming correct order
+
+
+# 10.02.2023 - Change outlier removal
+
+
+### Notes & updates
+* Last column of checkboxGroupTable: control = <input type='checkbox' class='checkbox' name='checkboxPCA' value='Eafr_Afr_GE712'/>
+* Checkbox column does not need to be specified/created in advanced
+
+
+### Questions/Unclarities
+* 
+
+
+### TODO
+* Get rid of groupingVariables as much as possible
