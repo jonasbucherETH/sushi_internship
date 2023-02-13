@@ -1150,6 +1150,8 @@ Named functions should never rely on a variable of the parent environment. Only 
 
 ### Notes & updates
 * Use actionBttn (shinyWidgets) instead of actionButton (shiny default)
+* Download and copy www folder: scp -r www jobucher@fgcz-c-047.uzh.ch:/srv/GT/analysis/jonas/ezRun/R/PCAMDS_shiny_new/ezRun/R/PCAMDS_shiny
+* /srv/GT/analysis/jonas/ezRun/R/PCAMDS_shiny_new/ezRun/R/PCAMDS_shiny$ scp /home/jobucher/git/ezRun/R/PCAMDS_shiny/*.R .
 
 
 ### Questions/Unclarities
@@ -1158,6 +1160,6 @@ Named functions should never rely on a variable of the parent environment. Only 
 ### TODO
 * actionButtons design - (DONE)
 * Nicer table/text output showing which samples will be removed - DONE
-* Check app in Sushi
+* Check app in Sushi -> need to add output link for shiny and connect it to the app
 * Update & extend Rmarkdown
 * Check DT for convenient functions
