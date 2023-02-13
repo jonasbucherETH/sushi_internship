@@ -1142,3 +1142,20 @@ Named functions should never rely on a variable of the parent environment. Only 
 * Get rid of groupingVariables in code as much as possible
 * Take out rownames from datatable
 * Change x3 & x4 to reasonable variable names
+
+
+# 13.02.2023 - Change outlier removal
+
+
+### Notes & updates
+* 
+
+
+### Questions/Unclarities
+
+
+### TODO
+* actioonButtons design
+* Nicer table showing of which samples will be removed
+* Check app in Sushi
+* Update & extend Rmarkdown
