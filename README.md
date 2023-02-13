@@ -1136,26 +1136,28 @@ Named functions should never rely on a variable of the parent environment. Only 
 
 ### Questions/Unclarities
 * Why is PC1 (axis) not bigger than PC2 if the axes are kept proportional?
+-> probably because of the one outlier in the samples
 
 
 ### TODO
 * Get rid of groupingVariables in code as much as possible
-* Take out rownames from datatable
-* Change x3 & x4 to reasonable variable names
+* Take out rownames from datatable - DONE
+* Change x3 & x4 to reasonable variable names - DONE
 
 
-# 13.02.2023 - Change outlier removal
+# 13.02.2023 - 
 
 
 ### Notes & updates
-* 
+* Use actionBttn (shinyWidgets) instead of actionButton (shiny default)
 
 
 ### Questions/Unclarities
 
 
 ### TODO
-* actioonButtons design
-* Nicer table showing of which samples will be removed
+* actionButtons design - (DONE)
+* Nicer table/text output showing which samples will be removed - DONE
 * Check app in Sushi
 * Update & extend Rmarkdown
+* Check DT for convenient functions
