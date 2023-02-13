@@ -1152,6 +1152,9 @@ Named functions should never rely on a variable of the parent environment. Only 
 * Use actionBttn (shinyWidgets) instead of actionButton (shiny default)
 * Download and copy www folder: scp -r www jobucher@fgcz-c-047.uzh.ch:/srv/GT/analysis/jonas/ezRun/R/PCAMDS_shiny_new/ezRun/R/PCAMDS_shiny
 * /srv/GT/analysis/jonas/ezRun/R/PCAMDS_shiny_new/ezRun/R/PCAMDS_shiny$ scp /home/jobucher/git/ezRun/R/PCAMDS_shiny/*.R .
+* (Colour choice implementation) -> colourpicker package
+  * Insufficient values in manual scale. 6 needed but only 0 provided. SOLVED
+  * Default colours not properly initialized (only when clicking apply parameters)
 
 
 ### Questions/Unclarities
@@ -1161,5 +1164,11 @@ Named functions should never rely on a variable of the parent environment. Only 
 * actionButtons design - (DONE)
 * Nicer table/text output showing which samples will be removed - DONE
 * Check app in Sushi -> need to add output link for shiny and connect it to the app
-* Update & extend Rmarkdown
+* Update & extend Rmarkdown:
+  * Add screeplot of PCA
 * Check DT for convenient functions
+* MDS in shiny
+* t-SNE in shiny:
+  * params: max_iter, theta, eta  
+  * apply colours button
+* check which inputs are actually needed in the observeEvents
