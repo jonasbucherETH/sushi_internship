@@ -1145,7 +1145,7 @@ Named functions should never rely on a variable of the parent environment. Only 
 * Change x3 & x4 to reasonable variable names - DONE
 
 
-# 13.02.2023 - 
+# 13.02.2023 - UI updates, colour choice implementation
 
 
 ### Notes & updates
@@ -1157,12 +1157,32 @@ Named functions should never rely on a variable of the parent environment. Only 
   * Default colours not properly initialized (only when clicking apply parameters)
 
 
+### TODO
+* actionButtons design - (DONE)
+* Nicer table/text output showing which samples will be removed - DONE
+* Check app in Sushi -> need to add output link for shiny and connect it to the app
+* Update & extend Rmarkdown:
+  * Add screeplot of PCA
+* Check DT for convenient functions
+* MDS in shiny
+* t-SNE in shiny:
+  * params: max_iter, theta, eta  
+  * apply colours button
+* check which inputs are actually needed in the observeEvents
+
+
+# 14.02.2023 - Colour choice implementation continued
+
+
+### Notes & updates
+* colour choice: In first iteration/initialization the colorGroup selection does not work
+  -> plot only appears after pressing the button
+
+
 ### Questions/Unclarities
 
 
 ### TODO
-* actionButtons design - (DONE)
-* Nicer table/text output showing which samples will be removed - DONE
 * Check app in Sushi -> need to add output link for shiny and connect it to the app
 * Update & extend Rmarkdown:
   * Add screeplot of PCA
