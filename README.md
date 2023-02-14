@@ -1177,6 +1177,7 @@ Named functions should never rely on a variable of the parent environment. Only 
 ### Notes & updates
 * colour choice: In first iteration/initialization the colorGroup selection does not work
   -> plot only appears after pressing the button
+* check ignoreInit & NULL
 
 
 ### Questions/Unclarities
