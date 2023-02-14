@@ -1181,6 +1181,7 @@ Named functions should never rely on a variable of the parent environment. Only 
 * maybe move the plotting up and the colour&design stuff down
 * Best working one so far (everything works but the changing of colourGroup): updateSelectizeInput and output$myPanel both before the first observeEvent
 * Check deseq app to see how loading of shiny app is done
+* shiny app is on rs_connect and works!! (mostly)
 
 ### Questions/Unclarities
 
