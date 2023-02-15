@@ -1171,7 +1171,7 @@ Named functions should never rely on a variable of the parent environment. Only 
 * check which inputs are actually needed in the observeEvents
 
 
-# 14.02.2023 - Colour choice implementation continued
+# 14.02.2023 - Colour choice implementation continued; upload shiny app to rs_connect
 
 
 ### Notes & updates
@@ -1196,3 +1196,30 @@ Named functions should never rely on a variable of the parent environment. Only 
   * params: max_iter, theta, eta  
   * apply colours button
 * check which inputs are actually needed in the observeEvents
+
+
+# 15.02.2023 - Make full app work in SUSHI; some design details
+
+
+### Notes & updates
+* pca loadings needs to be adapted (always shows same PC; in general a bit dire)
+  it also reloads when changing one of the display parameters
+* actionButton value: An integer of class "shinyActionButtonValue". This class differs from ordinary integers in that a value of 0 is considered "falsy". This implies: Event handlers (e.g., observeEvent(), eventReactive()) won't execute on initial load.
+* priority: An integer or numeric that controls the priority with which this observer should be executed
+
+### Questions/Unclarities
+* Scaling: Give the option to the user or not?
+
+### TODO
+* edit ruby file (see deseq2 or something)
+* Update & extend Rmarkdown:
+  * Add screeplot of PCA
+* (Check DT for convenient functions)
+* MDS in shiny
+* t-SNE in shiny:
+  * params: max_iter, theta, eta  -> plus descriptions
+  * make it run with default value in beginning
+  * make it reasonable so it is computationally not so expensive (saving plots/calculations?) -> maybe renderCachedPlot()
+* check which inputs are actually needed in the observeEvents
+* fix colourInput & implement for other dimensionality reduction methods
+* Make a nicer ("these samples are currently selected" table)
