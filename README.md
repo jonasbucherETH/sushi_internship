@@ -1206,6 +1206,9 @@ Named functions should never rely on a variable of the parent environment. Only 
   it also reloads when changing one of the display parameters
 * actionButton value: An integer of class "shinyActionButtonValue". This class differs from ordinary integers in that a value of 0 is considered "falsy". This implies: Event handlers (e.g., observeEvent(), eventReactive()) won't execute on initial load.
 * priority: An integer or numeric that controls the priority with which this observer should be executed
+* IMPORTANT: now the colours change for all plots at the same time, but there are some errors.
+  * reason: all have same input: selectizeInput(inputId = "select", ...)
+  * would be great if it works, otherwise change to specific name per tab
 
 ### Questions/Unclarities
 * Scaling: Give the option to the user or not?
