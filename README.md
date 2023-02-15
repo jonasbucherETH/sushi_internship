@@ -1208,7 +1208,7 @@ Named functions should never rely on a variable of the parent environment. Only 
 * priority: An integer or numeric that controls the priority with which this observer should be executed
 * IMPORTANT: now the colours change for all plots at the same time, but there are some errors.
   * reason: all have same input: selectizeInput(inputId = "select", ...)
-  * would be great if it works, otherwise change to specific name per tab
+  * would be great if it works, otherwise change to specific name per tab (probably better to change)
 * Some problems with the titles; check for better solutions
 
 ### Questions/Unclarities
