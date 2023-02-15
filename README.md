@@ -1209,6 +1209,7 @@ Named functions should never rely on a variable of the parent environment. Only 
 * IMPORTANT: now the colours change for all plots at the same time, but there are some errors.
   * reason: all have same input: selectizeInput(inputId = "select", ...)
   * would be great if it works, otherwise change to specific name per tab
+* Some problems with the titles; check for better solutions
 
 ### Questions/Unclarities
 * Scaling: Give the option to the user or not?
