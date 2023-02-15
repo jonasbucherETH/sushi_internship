@@ -1209,6 +1209,7 @@ Named functions should never rely on a variable of the parent environment. Only 
 
 ### Questions/Unclarities
 * Scaling: Give the option to the user or not?
+* Can I somehow keep chosen colour options for all outputs?
 
 ### TODO
 * edit ruby file (see deseq2 or something)
@@ -1218,8 +1219,8 @@ Named functions should never rely on a variable of the parent environment. Only 
 * MDS in shiny
 * t-SNE in shiny:
   * params: max_iter, theta, eta  -> plus descriptions
-  * make it run with default value in beginning
-  * make it reasonable so it is computationally not so expensive (saving plots/calculations?) -> maybe renderCachedPlot()
-* check which inputs are actually needed in the observeEvents
-* fix colourInput & implement for other dimensionality reduction methods
+  * make it run with default value in beginning - DONE
+  * (make it reasonable so it is computationally not so expensive (saving plots/calculations?) -> maybe renderCachedPlot())
+* check which inputs are actually needed in the observeEvents (PCA & UMAP)
+* colourInput colourInput implement for other dimensionality reduction methods
 * Make a nicer ("these samples are currently selected" table)
