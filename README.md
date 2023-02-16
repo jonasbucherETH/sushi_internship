@@ -1239,14 +1239,16 @@ Named functions should never rely on a variable of the parent environment. Only 
 * Try: observeEvent({
   req(input$...)
   # ...
-})
+}) -> This helped; also naming everything differently for the different apps
+* Need scaleGen, to get rid of NAs in table
+
 
 ### Questions/Unclarities
-* 
+* Distance matrix for t-SNE, which metric?
 
 ### TODO
-* edit ruby file (see deseq2 or something)
-* pca loadings needs to be adapted (always shows same PC; in general a bit dire)
+* edit ruby file (see deseq2 or something) - see with Masa
+* adapt PCA loadings table
 * Update & extend Rmarkdown:
   * Add screeplot of PCA
 * MDS in shiny
@@ -1255,11 +1257,13 @@ Named functions should never rely on a variable of the parent environment. Only 
   * (make it reasonable so it is computationally not so expensive (saving plots/calculations?) -> maybe renderCachedPlot())
 * implement colourInput for other dimensionality reduction methods - DONE
 * Make a nicer ("these samples are currently selected" table)
-* (Scaling: Give the option to the user)
+* Scaling: Give the option to the user
+* Change vcfgenind name to dataset and use it as input - DONE
 * Custom plot dimensions for UMAP & t-SNE - DONE
-* Keep axes proportional for UMAP & t-SNE 
-* Zoom into plots?
+* (Keep axes proportional for UMAP & t-SNE?)
+* (Zoom into plots)
 * themes: theme_bw(), theme_light(), theme_minimal(), theme_classic() - DONE
 * (shape choice)
 * (message while plots are being (re-)done)
+* Try to add pop to dataset (in initInputData)
 
