@@ -1198,7 +1198,7 @@ Named functions should never rely on a variable of the parent environment. Only 
 * check which inputs are actually needed in the observeEvents
 
 
-# 15.02.2023 - Make full app work in SUSHI; some design details
+# 15.02.2023 - Some design details; custom colourInput
 
 
 ### Notes & updates
@@ -1226,5 +1226,33 @@ Named functions should never rely on a variable of the parent environment. Only 
   * make it run with default value in beginning - DONE
   * (make it reasonable so it is computationally not so expensive (saving plots/calculations?) -> maybe renderCachedPlot())
 * check which inputs are actually needed in the observeEvents (PCA & UMAP)
-* colourInput colourInput implement for other dimensionality reduction methods
+* implement colourInput for other dimensionality reduction methods
 * Make a nicer ("these samples are currently selected" table)
+
+
+# 16.02.2023 - Make full app work in SUSHI
+
+
+### Notes & updates
+* 
+
+### Questions/Unclarities
+* 
+
+### TODO
+* edit ruby file (see deseq2 or something)
+* pca loadings needs to be adapted (always shows same PC; in general a bit dire)
+* Update & extend Rmarkdown:
+  * Add screeplot of PCA
+* MDS in shiny
+* t-SNE in shiny:
+  * params: max_iter, theta, eta  -> plus descriptions
+  * (make it reasonable so it is computationally not so expensive (saving plots/calculations?) -> maybe renderCachedPlot())
+* implement colourInput for other dimensionality reduction methods
+* Make a nicer ("these samples are currently selected" table)
+* (Scaling: Give the option to the user)
+* Custom plot dimensions for UMAP & t-SNE
+* Zoom into plots?
+* (themes)
+* (shape choice)
+
