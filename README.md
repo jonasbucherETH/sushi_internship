@@ -1234,7 +1234,12 @@ Named functions should never rely on a variable of the parent environment. Only 
 
 
 ### Notes & updates
-* 
+* the colours are always 1 behind
+* try get/mget instead of eval(parse(
+* Try: observeEvent({
+  req(input$...)
+  # ...
+})
 
 ### Questions/Unclarities
 * 
@@ -1248,11 +1253,13 @@ Named functions should never rely on a variable of the parent environment. Only 
 * t-SNE in shiny:
   * params: max_iter, theta, eta  -> plus descriptions
   * (make it reasonable so it is computationally not so expensive (saving plots/calculations?) -> maybe renderCachedPlot())
-* implement colourInput for other dimensionality reduction methods
+* implement colourInput for other dimensionality reduction methods - DONE
 * Make a nicer ("these samples are currently selected" table)
 * (Scaling: Give the option to the user)
-* Custom plot dimensions for UMAP & t-SNE
+* Custom plot dimensions for UMAP & t-SNE - DONE
+* Keep axes proportional for UMAP & t-SNE 
 * Zoom into plots?
-* (themes)
+* themes: theme_bw(), theme_light(), theme_minimal(), theme_classic() - DONE
 * (shape choice)
+* (message while plots are being (re-)done)
 
