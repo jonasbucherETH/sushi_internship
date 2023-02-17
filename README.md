@@ -1230,7 +1230,7 @@ Named functions should never rely on a variable of the parent environment. Only 
 * Make a nicer ("these samples are currently selected" table)
 
 
-# 16.02.2023 - Make full app work in SUSHI
+# 16.02.2023 - Finishing custom colour input; adding features to UMAP and t-SNE
 
 
 ### Notes & updates
@@ -1267,3 +1267,38 @@ Named functions should never rely on a variable of the parent environment. Only 
 * (message while plots are being (re-)done)
 * Try to add pop to dataset (in initInputData)
 
+
+
+# 17.02.2023 - Make full app work in SUSHI
+
+
+### Notes & updates
+* 
+
+
+### Questions/Unclarities
+* Distance matrix for t-SNE, which metric?
+* Sizes of plots within box - can I make it depend on screen of user or something?
+* How to best include notes/descriptions?
+* How to make the labels more visible when there are overlaps
+
+### TODO
+* edit ruby file (see deseq2 or something) - see with Masa
+* adapt PCA loadings table
+* Update & extend Rmarkdown:
+  * Add screeplot of PCA
+* MDS in shiny
+* t-SNE in shiny:
+  * parameter descriptions: max_iter, theta, eta, ...
+  * (make it reasonable so it is computationally not so expensive (saving plots/calculations?) -> maybe renderCachedPlot())
+* Make a nicer ("these samples are currently selected" output/table)
+* Scaling: Give the option to the user
+  * PCA
+  * t-SNE
+  * UMAP
+* (Keep axes proportional for UMAP & t-SNE?)
+* (Zoom into plots)
+* themes: theme_bw(), theme_light(), theme_minimal(), theme_classic() - DONE
+* (shape choice)
+* (message while plots are being (re-)done)
+* Try to add pop to dataset (in initInputData)
