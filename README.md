@@ -1281,6 +1281,7 @@ Named functions should never rely on a variable of the parent environment. Only 
 * Sizes of plots within box - can I make it depend on screen of user or something?
 * How to best include notes/descriptions?
 * How to make the labels more visible when there are overlaps
+* Name of app?
 
 ### TODO
 * edit ruby file (see deseq2 or something) - see with Masa
