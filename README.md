@@ -1302,4 +1302,4 @@ Named functions should never rely on a variable of the parent environment. Only 
 * themes: theme_bw(), theme_light(), theme_minimal(), theme_classic() - DONE
 * (shape choice)
 * (message while plots are being (re-)done)
-* Try to add pop to dataset (in initInputData)
+* IDEA: comparison page of all 4 plots
