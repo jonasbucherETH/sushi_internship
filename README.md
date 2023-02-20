@@ -1322,11 +1322,14 @@ Named functions should never rely on a variable of the parent environment. Only 
 * Name of app?
 * how to access variable "name" in server-inputData?
 * SUSHI Rmarkdown works; shiny ui loads but it disconnects from server immediately
+* time for presentation; who will be there?
 
 ### TODO
 * adapt PCA loadings table
-* Update & extend Rmarkdown:
+* Rmarkdown:
   * Add screeplot of PCA
+  * add UMAP
+  * make plots slightly smaller
 * Extend MDS in shiny
 * Add texts (descriptions, explanations)
 * Scaling & centering: Give the option to the user
