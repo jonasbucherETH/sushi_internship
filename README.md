@@ -1313,6 +1313,9 @@ Named functions should never rely on a variable of the parent environment. Only 
 * Error in file: invalid 'description' argument in each server
   * occurs when attempting to read more than one file at the same time
   * try similar to this: oraHTML <- file.path(dataDir, list.files(dataDir)[grep("ORA_results.xlsx", list.files(dataDir))])
+* ~/git/ezRun/inst/templates$ scp PCAMDS.Rmd /srv/GT/analysis/jonas/ezRun/R/PCAMDS_shiny_new/ezRun/inst/templates
+* ~/git/ezRun/R$ scp app-PCAMDS.R /srv/GT/analysis/jonas/ezRun/R/PCAMDS_shiny_new/ezRun/R
+
 
 
 ### Questions/Unclarities
