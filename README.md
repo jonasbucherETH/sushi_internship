@@ -1352,6 +1352,6 @@ Named functions should never rely on a variable of the parent environment. Only 
 
 
 TODO next:
-* check file paths
+* check file paths (server-inputData, markdown, app)
 * check if everything works as intended with the rinst
 * run on sushi again, check if output is as defined in latest version
