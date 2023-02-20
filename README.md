@@ -1343,3 +1343,4 @@ Named functions should never rely on a variable of the parent environment. Only 
 * (message while plots are being (re-)done in the plot box)
 * IDEA: comparison page of all 4 plots
 * update used libraries
+* check/compare results with those of Masa
