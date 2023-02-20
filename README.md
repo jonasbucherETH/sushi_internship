@@ -1303,3 +1303,40 @@ Named functions should never rely on a variable of the parent environment. Only 
 * (shape choice)
 * (message while plots are being (re-)done)
 * IDEA: comparison page of all 4 plots
+
+
+
+# 20.02.2023 - Start preparing presentation; finish some things in the app
+
+
+### Notes & updates
+* Error in file: invalid 'description' argument in each server
+  * occurs when attempting to read more than one file at the same time
+  * try similar to this: oraHTML <- file.path(dataDir, list.files(dataDir)[grep("ORA_results.xlsx", list.files(dataDir))])
+
+
+### Questions/Unclarities
+* Distance matrix for t-SNE, which metric?
+* Sizes of plots within box - can I make it depend on screen of user or something?
+* How to best include notes/descriptions?
+* Name of app?
+* how to access variable "name" in server-inputData?
+* SUSHI Rmarkdown works; shiny ui loads but it disconnects from server immediately
+
+### TODO
+* adapt PCA loadings table
+* Update & extend Rmarkdown:
+  * Add screeplot of PCA
+* Extend MDS in shiny
+* Add texts (descriptions, explanations)
+* Scaling & centering: Give the option to the user
+  * PCA
+  * t-SNE
+  * UMAP
+  * MDS
+* (Keep axes proportional for UMAP, t-SNE & MDS?)
+* (Zoom into plots)
+* (shape choice)
+* (message while plots are being (re-)done in the plot box)
+* IDEA: comparison page of all 4 plots
+* update used libraries
