@@ -1315,6 +1315,8 @@ Named functions should never rely on a variable of the parent environment. Only 
   * try similar to this: oraHTML <- file.path(dataDir, list.files(dataDir)[grep("ORA_results.xlsx", list.files(dataDir))])
 * ~/git/ezRun/inst/templates$ scp PCAMDS.Rmd /srv/GT/analysis/jonas/ezRun/R/PCAMDS_shiny_new/ezRun/inst/templates
 * ~/git/ezRun/R$ scp app-PCAMDS.R /srv/GT/analysis/jonas/ezRun/R/PCAMDS_shiny_new/ezRun/R
+* ~/git/ezRun/inst/templates$ scp PCAMDS.Rmd /srv/GT/analysis/jonas/ezRun/inst/templates
+* ~/git/ezRun/R$ scp app-PCAMDS.R /srv/GT/analysis/jonas/ezRun/R
 
 
 
@@ -1347,3 +1349,9 @@ Named functions should never rely on a variable of the parent environment. Only 
 * IDEA: comparison page of all 4 plots
 * update used libraries
 * check/compare results with those of Masa
+
+
+TODO next:
+* check file paths
+* check if everything works as intended with the rinst
+* run on sushi again, check if output is as defined in latest version
