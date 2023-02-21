@@ -1313,10 +1313,11 @@ Named functions should never rely on a variable of the parent environment. Only 
 * Error in file: invalid 'description' argument in each server
   * occurs when attempting to read more than one file at the same time
   * try similar to this: oraHTML <- file.path(dataDir, list.files(dataDir)[grep("ORA_results.xlsx", list.files(dataDir))])
-* ~/git/ezRun/inst/templates$ scp PCAMDS.Rmd /srv/GT/analysis/jonas/ezRun/R/PCAMDS_shiny_new/ezRun/inst/templates
-* ~/git/ezRun/R$ scp app-PCAMDS.R /srv/GT/analysis/jonas/ezRun/R/PCAMDS_shiny_new/ezRun/R
+(* ~/git/ezRun/inst/templates$ scp PCAMDS.Rmd /srv/GT/analysis/jonas/ezRun/R/PCAMDS_shiny_new/ezRun/inst/templates )
+(* ~/git/ezRun/R$ scp app-PCAMDS.R /srv/GT/analysis/jonas/ezRun/R/PCAMDS_shiny_new/ezRun/R )
 * ~/git/ezRun/inst/templates$ scp PCAMDS.Rmd /srv/GT/analysis/jonas/ezRun/inst/templates
 * ~/git/ezRun/R$ scp app-PCAMDS.R /srv/GT/analysis/jonas/ezRun/R
+* SUSHI Rmarkdown works; shiny ui loads but it disconnects from server immediately
 
 
 
@@ -1327,7 +1328,7 @@ Named functions should never rely on a variable of the parent environment. Only 
 * Name of app?
 * how to access variable "name" in server-inputData?
 * SUSHI Rmarkdown works; shiny ui loads but it disconnects from server immediately
-* time for presentation; who will be there?
+* time for presentation -> around 25-30 minutes
 
 ### TODO
 * adapt PCA loadings table
@@ -1355,3 +1356,45 @@ TODO next:
 * check file paths (server-inputData, markdown, app)
 * check if everything works as intended with the rinst
 * run on sushi again, check if output is as defined in latest version
+                                    
+                                    
+
+# 21.02.2023 - Prepare presentation slides; finish some things in the app
+
+
+### Notes & updates
+* Maybe grep("plink.dist", ...) creates the problem, as there is also "plink.dist.id" -> try grep(..., fixed = T)
+* Fehler in umap(X = datasetUMAP, n_neighbors = 15, n_components = 2, metric = "euclidean",  : 
+  konnte Funktion "umap" nicht finden
+-> add package "uwot"
+* still not, install package in jonas/R_LIBS
+* wrong name in umap function used (fml): changed datasetUmAP to datasetScaled
+
+
+
+### Questions/Unclarities
+* (how to access variable "name" in server-inputData?)
+
+### TODO
+* check file paths (server-inputData, markdown, app)
+* check if everything works as intended with the rinst
+* run on sushi again, check if output is as defined in latest version
+* check/compare results with those of Masa
+
+* put tsne calculations in app (nor in markdown); or maybe not (distance matrix from app needed)
+* adapt PCA loadings table
+* Rmarkdown:
+  * Add screeplot of PCA
+  * add UMAP - DONE
+  * make plots slightly smaller DONE
+* Extend MDS in shiny
+* Add texts (descriptions, explanations)
+* Scaling & centering: Give the option to the user
+  * PCA - DONE
+  * t-SNE - DONE
+  * UMAP - DONE
+* (Keep axes proportional for UMAP, t-SNE & MDS?)
+* (shape choice)
+* IDEA: comparison page of all 4 plots - DONE
+* update used libraries
+
