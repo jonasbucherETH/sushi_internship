@@ -1369,6 +1369,7 @@ TODO next:
 -> add package "uwot"
 * still not, install package in jonas/R_LIBS
 * wrong name in umap function used (fml): changed datasetUmAP to datasetScaled
+* Try to add something like: params['Rversion'] = ["Dev/R/4.2.2"]
 
 
 
