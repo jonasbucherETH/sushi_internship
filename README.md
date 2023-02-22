@@ -1420,6 +1420,7 @@ TODO next:
 ### TODO
 * check/compare results with those of Masa
 * Add texts (descriptions, explanations)
+* Fix logos
 * Rmarkdown:
   * Add screeplot of PCA
 * Extend MDS in shiny
