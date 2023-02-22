@@ -1410,6 +1410,9 @@ TODO next:
 * try without everything related to umap
 * try to run a bash script to generate data from app-PCAMDS.R
 * it works now, check again with umap 
+* Quitting from lines 19-116 (PCAMDS.Rmd): Fehler in gzfile(file, "rb") : kann Verbindung nicht öffnen
+  -> had a typo in the app with umapResult(s)
+
 
 
 
