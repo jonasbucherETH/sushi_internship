@@ -1399,3 +1399,19 @@ TODO next:
 * IDEA: comparison page of all 4 plots - DONE
 * update used libraries
 
+
+
+# 22.02.2023 - Presentation & SUSHI fixing
+
+
+### Notes & updates
+* Try without umap function in app-PCAMDS.R -> put it in Rmd and server-inputData instead, see what happens
+
+
+
+### Questions/Unclarities
+* 
+
+
+### TODO
+* 
