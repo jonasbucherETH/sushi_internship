@@ -1406,6 +1406,10 @@ TODO next:
 
 ### Notes & updates
 * Try without umap function in app-PCAMDS.R -> put it in Rmd and server-inputData instead, see what happens
+* still cannot find function umap
+* try without everything related to umap
+* try to run a bash script to generate data from app-PCAMDS.R
+* it works now, check again with umap 
 
 
 
