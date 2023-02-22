@@ -1418,4 +1418,13 @@ TODO next:
 
 
 ### TODO
-* 
+* check/compare results with those of Masa
+* Add texts (descriptions, explanations)
+* Rmarkdown:
+  * Add screeplot of PCA
+* Extend MDS in shiny
+* (Keep axes proportional for UMAP, t-SNE & MDS?)
+* update used libraries
+* (shape choice)
+* adapt PCA loadings table
+
