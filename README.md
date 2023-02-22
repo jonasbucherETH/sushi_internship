@@ -1412,12 +1412,14 @@ TODO next:
 * it works now, check again with umap 
 * Quitting from lines 19-116 (PCAMDS.Rmd): Fehler in gzfile(file, "rb") : kann Verbindung nicht öffnen
   -> had a typo in the app with umapResult(s)
+  -> works now
+* added screeplot to t-SNE shiny
 
 
 
 
 ### Questions/Unclarities
-* 
+* Why does PCA sample removal fail on fgcz-shiny?
 
 
 ### TODO
